@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+    <h1 style="text-align:center; color:steelblue">
+        <bold>CMPS 165 Final Project</bold>
+    </h1>
+</head>
+
+<body>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <script>
+        var width = 1200,
+            height = 700;
+
+        var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        var g = svg.append("g")
+            .attr("class", "key")
+            .attr("transform", "translate(700,40)");
+    </script>
+</body>
