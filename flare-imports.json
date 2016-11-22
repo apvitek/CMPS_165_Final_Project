@@ -2,17 +2,26 @@
     {
         "name": "flare.house.New York",
         "size": 1000,
-        "imports": ["flare.garage.2 Step", "flare.garage.Grime", "flare.garage.UK Garage", "flare.house.Funk House"]
+        "imports": ["flare.garage.2 Step", "flare.garage.Grime", "flare.garage.UK Garage", "flare.house.Funk House"],
+	"year": 1982,
+	"artist": ["Larry Levan", "Romanthony", "Oliver Cheatham"],
+	"link": "https://play.spotify.com/artist/7wxPD9vDsKD5OuHCeWgXRm"
     }
     , {
         "name": "flare.house.Chicago",
         "size": 3812,
-        "imports": ["flare.techno.Detroit Techno", "flare.house.Fidget", "flare.house.French House", "flare.house.Deep House"]
+        "imports": ["flare.techno.Detroit Techno", "flare.house.Fidget", "flare.house.French House", "flare.house.Deep House"],
+	"year": 1980,
+	"artist": ["Marshall Jefferson", "Steve Hurley", "Larry Heard"],
+	"link": "https://play.spotify.com/artist/3xheu5GJHGT28BGwjXSjoN"
     }
     , {
         "name": "flare.house.Funk House",
         "size": 6714,
-        "imports": ["flare.house.Tribal", "flare.house.French House"]
+        "imports": ["flare.house.Tribal", "flare.house.French House"],
+	"year": 1984,
+	"artist": ["Armand Van Helden", "Fab Four", "Angel Alanis"],
+	"link": "https://play.spotify.com/album/22rj5RUnaXcehWLr05mVUy"
     }
     , {
         "name": "flare.house.Acid House",
