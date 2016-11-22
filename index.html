@@ -55,7 +55,7 @@
     </h2>
     <div style="position:absolute;bottom:0;font-size:18px;">tension: <input style="position:relative;top:3px;" type="range" min="0" max="100" value="85"></div>
     <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
-    <script type="text/javascript" src="d3/d3.layout.js"></script>
+<!--    <script type="text/javascript" src="d3/d3.layout.js"></script>-->
     <script type="text/javascript" src="packages.js"></script>
     <script type="text/javascript">
         var w = 1280,
@@ -63,7 +63,8 @@
             rx = w / 2,
             ry = h / 2,
             m0,
-            rotate = 0;
+            rotate = 0
+            radius = Math.min(w, h) / 2.1;
 
         var splines = [];
 
@@ -93,11 +94,37 @@
             .style("position", "absolute")
             .style("-webkit-backface-visibility", "hidden");
 
+        
+var color = d3.scale.ordinal()
+    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00", "#1ec4dc","#42444e","#da4264","#6644af","#eae77a"]);
+
+var arc = d3.svg.arc()
+    .outerRadius(radius - 100)
+    .innerRadius(radius - 90);
+
+var pie = d3.layout.pie()
+    .sort(null)
+    .value(function(d) { return d.numberOfSubs; });
+
+        
         var svg = div.append("svg:svg")
             .attr("width", w)
             .attr("height", w)
             .append("svg:g")
             .attr("transform", "translate(" + rx + "," + ry + ")");
+
+        d3.csv("data.csv", type, function(error, data) {
+  if (error) throw error;
+
+  var g = svg.selectAll(".arc")
+      .data(pie(data))
+    .enter().append("svg:g")
+      .attr("class", "arc");
+
+  g.append("path")
+      .attr("d", arc)
+      .style("fill", function(d) { return color(d.data.subgenre); });
+        });
 
         var tooltip = d3.select("body").append("div")
             .attr("class", "tooltip")
@@ -138,7 +165,7 @@
                 })
                 .append("svg:text")
                 .attr("dx", function(d) {
-                    return d.x < 180 ? 8 : -8;
+                    return d.x < 180 ? 20 : -20;
                 })
                 .attr("dy", ".31em")
                 .attr("text-anchor", function(d) {
@@ -199,7 +226,7 @@
                     .attr("transform", "translate(" + rx + "," + ry + ")rotate(" + rotate + ")")
                     .selectAll("g.node text")
                     .attr("dx", function(d) {
-                        return (d.x + rotate) % 360 < 180 ? 8 : -8;
+                        return (d.x + rotate) % 360 < 180 ? 20 : -20;
                     })
                     .attr("text-anchor", function(d) {
                         return (d.x + rotate) % 360 < 180 ? "start" : "end";
@@ -258,6 +285,13 @@
         function dot(a, b) {
             return a[0] * b[0] + a[1] * b[1];
         }
+            
+            
+function type(d) {
+  d.numberOfSubs = +d.numberOfSubs;
+  return d;
+}
+       
     </script>
 </body>
 
