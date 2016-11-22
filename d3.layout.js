@@ -151,15 +151,13 @@
                     var source = subgroups[i + "-" + j],
                         target = subgroups[j + "-" + i];
                     if (source.value || target.value) {
-                        chords.push(source.value < target.value ?
-                            {
-                                source: target,
-                                target: source
-                            } :
-                            {
-                                source: source,
-                                target: target
-                            });
+                        chords.push(source.value < target.value ? {
+                            source: target,
+                            target: source
+                        } : {
+                            source: source,
+                            target: target
+                        });
                     }
                 }
             }
