@@ -3,25 +3,25 @@
         "name": "flare.house.New York",
         "size": 1000,
         "imports": ["flare.garage.2 Step", "flare.garage.Grime", "flare.garage.UK Garage", "flare.house.Funk House"],
-	"year": 1982,
-	"artist": ["Larry Levan", "Romanthony", "Oliver Cheatham"],
-	"link": "https://play.spotify.com/artist/7wxPD9vDsKD5OuHCeWgXRm"
+        "year": 1982,
+        "artist": ["Larry Levan", "Romanthony", "Oliver Cheatham"],
+        "link": "https://play.spotify.com/artist/7wxPD9vDsKD5OuHCeWgXRm"
     }
     , {
         "name": "flare.house.Chicago",
         "size": 3812,
         "imports": ["flare.techno.Detroit Techno", "flare.house.Fidget", "flare.house.French House", "flare.house.Deep House"],
-	"year": 1980,
-	"artist": ["Marshall Jefferson", "Steve Hurley", "Larry Heard"],
-	"link": "https://play.spotify.com/artist/3xheu5GJHGT28BGwjXSjoN"
+        "year": 1980,
+        "artist": ["Marshall Jefferson", "Steve Hurley", "Larry Heard"],
+        "link": "https://play.spotify.com/artist/3xheu5GJHGT28BGwjXSjoN"
     }
     , {
         "name": "flare.house.Funk House",
         "size": 6714,
         "imports": ["flare.house.Tribal", "flare.house.French House"],
-	"year": 1984,
-	"artist": ["Armand Van Helden", "Fab Four", "Angel Alanis"],
-	"link": "https://play.spotify.com/album/22rj5RUnaXcehWLr05mVUy"
+        "year": 1984,
+        "artist": ["Armand Van Helden", "Fab Four", "Angel Alanis"],
+        "link": "https://play.spotify.com/album/22rj5RUnaXcehWLr05mVUy"
     }
     , {
         "name": "flare.house.Acid House",
@@ -78,12 +78,12 @@
         "size": 7074,
         "imports": []
     }
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 	, {
         "name": "flare.disco.Disco Classic",
         "size": 7074,
@@ -124,11 +124,11 @@
         "size": 7074,
         "imports": []
     }
-	
-	
-	
-	
-	
+
+
+
+
+
 	, {
         "name": "flare.trance.Goa Trance",
         "size": 7074,
@@ -159,11 +159,11 @@
         "size": 7074,
         "imports": []
     }
-	
-	
-	
-	
-	
+
+
+
+
+
 	, {
         "name": "flare.techno.Electro",
         "size": 7074,
@@ -194,11 +194,11 @@
         "size": 7074,
         "imports": []
     }
-	
-	
-	
-	
-	
+
+
+
+
+
 	, {
         "name": "flare.hardcore.Hardtek",
         "size": 7074,
@@ -254,11 +254,11 @@
         "size": 7074,
         "imports": []
     }
-	
-	
-	
-	
-	
+
+
+
+
+
 	, {
         "name": "flare.industrial.Industrial",
         "size": 7074,
@@ -294,11 +294,11 @@
         "size": 7074,
         "imports": []
     }
-	
-	
-	
-	
-	
+
+
+
+
+
 	, {
         "name": "flare.downtempo.Ambient",
         "size": 7074,
@@ -339,11 +339,11 @@
         "size": 7074,
         "imports": []
     }
-	
-	
-	
-	
-	
+
+
+
+
+
 	, {
         "name": "flare.hip hop.Hip Hop",
         "size": 7074,
@@ -389,11 +389,11 @@
         "size": 7074,
         "imports": []
     }
-	
-	
-	
-	
-	
+
+
+
+
+
 	, {
         "name": "flare.garage.UK Garage",
         "size": 7074,
@@ -429,11 +429,11 @@
         "size": 7074,
         "imports": []
     }
-	
-	
-	
-	
-	
+
+
+
+
+
 	, {
         "name": "flare.breaks.Breakbeat",
         "size": 7074,
