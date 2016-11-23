@@ -74,7 +74,7 @@
         "imports": [],
 		"year": 1997,
 		"artist": ["Oval", "Isolee", "Akufen"],
-		"link": "https://play.spotify.com/user/thesoundsofspotify/playlist/6FbDQuTcGT0IoZCtsbCISv?play=true&utm_source=open.spotify.com&utm_medium=open"
+		"link": "https://play.spotify.com/user/thesoundsofspotify/playlist/6FbDQuTcGT0IoZCtsbCISv"
     }
 	, {
         "name": "flare.house.French_House",
@@ -105,19 +105,31 @@
 
 	, {
         "name": "flare.disco.Disco_Classic",
-        "imports": ["flare.house.French_House", "flare.house.Funk_House", "flare.house.New_York", "flare.hiphop.Hip_Hop", "flare.techno.Electro", "flare.disco.Nu_Disco", "flare.disco.Synthpop", "flare.disco.Electro_Pop", "flare.disco.Space_Disco"]
+        "imports": ["flare.house.French_House", "flare.house.Funk_House", "flare.house.New_York", "flare.hiphop.Hip_Hop", "flare.techno.Electro", "flare.disco.Nu_Disco", "flare.disco.Synthpop", "flare.disco.Electro_Pop", "flare.disco.Space_Disco"],
+		"year": 1966,
+		"artist": ["Donna Summer", "Bee Gees", "Village People"],
+		"link": "https://play.spotify.com/user/spotify/playlist/3tqF4zbW7zbNX3pP6rSw2B"
     }
 	, {
         "name": "flare.disco.Space_Disco",
-        "imports": []
+        "imports": [],
+		"year": 1973,
+		"artist": ["Cerrone", "Space", "Zodiac"],
+		"link": "https://play.spotify.com/user/atzedevrieze/playlist/1Eb5l3foOFrgeWuQqH8hz0"
     }
 	, {
         "name": "flare.disco.Electro_Pop",
-        "imports": ["flare.downtempo.Chillwave", "flare.disco.Electro_Clash", "flare.disco.Italo_Disco", "flare.disco.Synthpop"]
+        "imports": ["flare.downtempo.Chillwave", "flare.disco.Electro_Clash", "flare.disco.Italo_Disco", "flare.disco.Synthpop"],
+		"year": 1979,
+		"artist": ["Giorgio Moroder", "Vangelis", "Yellow Magic Orchestra"],
+		"link": "https://play.spotify.com/user/vljentertainment/playlist/5m4hhSRjrBU4KyaJ7zCtTy"
     }
 	, {
         "name": "flare.disco.Synthpop",
-        "imports": ["flare.house.Chicago", "flare.downtempo.Chillwave", "flare.industrial.Industrial_Dance", "flare.techno.Detroit_Techno", "flare.techno.Electro", "flare.disco.Electro_Clash", "flare.disco.Hi-nrg"]
+        "imports": ["flare.house.Chicago", "flare.downtempo.Chillwave", "flare.industrial.Industrial_Dance", "flare.techno.Detroit_Techno", "flare.techno.Electro", "flare.disco.Electro_Clash", "flare.disco.Hi-nrg"],
+		"year": 1977,
+		"artist": ["Human League", "New Order", "Petshop Boys"],
+		"link": "https://play.spotify.com/user/davidwhiting/playlist/1Drw7xxp6efQYIRDKTyRZk"
     }
 	, {
         "name": "flare.disco.Hi-nrg",
