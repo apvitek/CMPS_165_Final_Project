@@ -173,7 +173,7 @@ var pie = d3.layout.pie()
       .style("fill", function(d) { return color(d.data.subgenre); });
     for(var i = 0; i < 10; i++)
         {
-               var x = document.getElementById("myTable").rows[i].cells[0];
+            var x = document.getElementById("myTable").rows[i].cells[0];
             x.style.backgroundColor = color(i);
         }
     
