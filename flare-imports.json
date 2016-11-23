@@ -147,11 +147,17 @@
     }
 	, {
         "name": "flare.disco.Electro_Clash",
-        "imports": []
+        "imports": [],
+		"year": 1997,
+		"artist": ["I-F", "Miss Kittin and The Hacker", "FischerSpooner"],
+		"link": "https://play.spotify.com/artist/0InKgh2iAGSHny9anSjmJl"
     }
 	, {
         "name": "flare.disco.Nu_Disco",
-        "imports": []
+        "imports": [],
+		"year": 1997,
+		"artist": ["Louis La Roche", "Todd Terje", "Breakbot"],
+		"link": "https://play.spotify.com/user/kristerhongkong/playlist/0mDWNRMmvA9YKcjDDG5v8J"
     }
 
 
@@ -160,19 +166,31 @@
 
 	, {
         "name": "flare.trance.Goa_Trance",
-        "imports": ["flare.downtempo.Psybient", "flare.trance.Psy_Trance"]
+        "imports": ["flare.downtempo.Psybient", "flare.trance.Psy_Trance"],
+		"year": 1982,
+		"artist": ["Front Line Assembly", "Meat Beat Manifesto", "Front 242"],
+		"link": "https://play.spotify.com/user/thesoundsofspotify/playlist/7iuklwaJAAJFkN7FEGPDvo"
     }
 	, {
         "name": "flare.trance.Classic_Trance",
-        "imports": ["flare.trance.Goa_Trance", "flare.trance.Acid_Trance", "flare.trance.Psy_Trance", "flare.trance.Tech_Trance", "flare.trance.Uplifting"]
+        "imports": ["flare.trance.Goa_Trance", "flare.trance.Acid_Trance", "flare.trance.Psy_Trance", "flare.trance.Tech_Trance", "flare.trance.Uplifting"],
+		"year": 1990,
+		"artist": ["Paul Van Dyk", "Age of Love", "Emmanuel Top"],
+		"link": "https://play.spotify.com/user/ketakrigeren/playlist/5mFxpZEtLpvDgxXIVJMVc2"
     }
 	, {
         "name": "flare.trance.Acid_Trance",
-        "imports": []
+        "imports": [],
+		"year": 1989,
+		"artist": ["Laurent Garonler", "Act of Trance", "Electric Skychurch"],
+		"link": "https://play.spotify.com/user/themraleg22/playlist/1ItKjs0oHRoWaYvF6WFAao"
     }
 	, {
         "name": "flare.trance.Psy_Trance",
-        "imports": ["flare.downtempo.Psybient", "flare.hardcore.Trancecore"]
+        "imports": ["flare.downtempo.Psybient", "flare.hardcore.Trancecore"],
+		"year": 1998,
+		"artist": ["Astral Projection", "Space Tribe", "Infected Mushroom"],
+		"link": "https://play.spotify.com/user/munkiepus/playlist/6AizcnaX6AbVwtxSmxeJfj"
     }
 	, {
         "name": "flare.trance.Tech_Trance",
