@@ -133,11 +133,17 @@
     }
 	, {
         "name": "flare.disco.Hi-nrg",
-        "imports": ["flare.house.Electro_House", "flare.industrial.New_Beat", "flare.disco.Italo_Disco"]
+        "imports": ["flare.house.Electro_House", "flare.industrial.New_Beat", "flare.disco.Italo_Disco"],
+		"year": 1980,
+		"artist": ["Berry", "Sunsreem", "Sparks"],
+		"link": "https://play.spotify.com/user/amoslib/playlist/0OAv3ttshgJ9Rdnzsr7xCK"
     }
 	, {
         "name": "flare.disco.Italo_Disco",
-        "imports": ["flare.house.Balearic_Beat", "flare.disco.Nu_Disco"]
+        "imports": ["flare.house.Balearic_Beat", "flare.disco.Nu_Disco"],
+		"year": 1975,
+		"artist": ["Miko Missions", "MC Brain", "Hypnosis"],
+		"link": "https://play.spotify.com/user/kristianarvidsson/playlist/6K7ia1MAVGfAkVpummSwUz"
     }
 	, {
         "name": "flare.disco.Electro_Clash",
