@@ -22,47 +22,80 @@
     }
     , {
         "name": "flare.house.Acid_House",
-        "imports": ["flare.trance.Acid_Trance", "flare.trance.Classic_Trance", "flare.techno.Acid_Techno", "flare.hardcore.Hardcore", "flare.breaks.Big_Beat", "flare.breaks.Funky_Breaks", "flare.breaks.Happy_Hardcore", "flare.house.Ambient_House"]
+        "imports": ["flare.trance.Acid_Trance", "flare.trance.Classic_Trance", "flare.techno.Acid_Techno", "flare.hardcore.Hardcore", "flare.breaks.Big_Beat", "flare.breaks.Funky_Breaks", "flare.breaks.Happy_Hardcore", "flare.house.Ambient_House"],
+		"year": 1986,
+		"artist": ["Phunture", "DJ Pierre", "The KLF"],
+		"link": "https://play.spotify.com/user/spotify_uk_/playlist/0f1w97UiSLXNYDXcT2OOqq"
     }
     , {
         "name": "flare.house.Tech_House",
-        "imports": ["flare.hardcore.Gabber"]
+        "imports": ["flare.hardcore.Gabber"],
+		"year": 1986,
+		"artist": ["Laurent Wolf", "Chris Doria", "Gene Farris"],
+		"link": "https://play.spotify.com/user/stormyb/playlist/3LG467kTTHHs56uSis0tMz"
     }
     , {
         "name": "flare.house.Ambient_House",
-        "imports": ["flare.downtempo.Acid_Jazz"]
+        "imports": ["flare.downtempo.Acid_Jazz"],
+		"year": 1988,
+		"artist": ["Aphex Twins", "Boards of Canada", "The Orb"],
+		"link": "https://play.spotify.com/user/lerch/playlist/7pERBLP81qbr74ikOmXtdN"
     }
     , {
         "name": "flare.house.Deep_House",
-        "imports": ["flare.garage.UK_Garage", "flare.disco.Nu_Disco", "flare.house.Balearic_Beat", "flare.house.Tribal"]
+        "imports": ["flare.garage.UK_Garage", "flare.disco.Nu_Disco", "flare.house.Balearic_Beat", "flare.house.Tribal"],
+		"year": 1988,
+		"artist": ["Larry Heard", "Blue Six", "Miguel Migs"],
+		"link": "https://play.spotify.com/user/12157468693/playlist/6sDBSOl9ZyFg5EbaZAAGiO"
     }
     , {
         "name": "flare.house.Tribal",
-        "imports": ["flare.garage.UK_Funky"]
+        "imports": ["flare.garage.UK_Funky"],
+		"year": 1992,
+		"artist": ["Danny Tenaglia", "Junior Vasquez", "Peter Rauhover"],
+		"link": "https://play.spotify.com/user/thesoundsofspotify/playlist/28k2EefJC3hIfubtmcQrIW"
     }
     , {
         "name": "flare.house.Balearic_Beat",
-        "imports": ["flare.trance.Uplifting", "flare.house.Progressive"]
+        "imports": ["flare.trance.Uplifting", "flare.house.Progressive"],
+		"year": 1988,
+		"artist": ["Paul Oakenfold", "Danny Rampling", "Trevor Fung"],
+		"link": "https://play.spotify.com/album/0ZnvOuY41Cyu8aVGhfyoXe"
     }
     , {
         "name": "flare.house.Progressive",
-        "imports": ["flare.breaks.Progressive"]
+        "imports": ["flare.breaks.Progressive"],
+		"year": 1993,
+		"artist": ["Leftfield", "React 2 Rhythm", "Not Forgotten"],
+		"link": "https://play.spotify.com/user/ibandez/playlist/2mbbKXbjx7DdMo907kdCUv"
     }
 	, {
         "name": "flare.house.Micro",
-        "imports": []
+        "imports": [],
+		"year": 1997,
+		"artist": ["Oval", "Isolee", "Akufen"],
+		"link": "https://play.spotify.com/user/thesoundsofspotify/playlist/6FbDQuTcGT0IoZCtsbCISv?play=true&utm_source=open.spotify.com&utm_medium=open"
     }
 	, {
         "name": "flare.house.French_House",
-        "imports": ["flare.house.Electro_House"]
+        "imports": ["flare.house.Electro_House"],
+		"year": 1990,
+		"artist": ["Daft Punk", "Cassius", "Etienne de Crecy"],
+		"link": "https://play.spotify.com/user/asohn/playlist/5ppM60Yz9OZGWxsbeOhWQX"
     }
 	, {
         "name": "flare.house.Electro_House",
-        "imports": ["flare.garage.UK_Funky"]
+        "imports": ["flare.garage.UK_Funky"],
+		"year": 2002,
+		"artist": ["Justice", "MSTRKRFT", "Swedish House Mafia"],
+		"link": "https://play.spotify.com/user/soundrop/playlist/1G0q0NK7g3C0XerNqq7GbL"
     }
 	, {
         "name": "flare.house.Fidget",
-        "imports": []
+        "imports": [],
+		"year": 2004,
+		"artist": ["Bloody Beetroots", "Crookers", "Danger"],
+		"link": "https://play.spotify.com/user/soundrop/playlist/1G0q0NK7g3C0XerNqq7GbL"
     }
 
 
