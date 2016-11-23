@@ -118,4 +118,5 @@ div.tooltip {
     background: lightgray;
     border: 0px;
     border-radius: 275px;
+    pointer-events: none;
 }
