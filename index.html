@@ -148,6 +148,7 @@
             g.append("path").attr("d", arc).style("fill", function (d) {
                 return color(d.data.subgenre);
             });
+<<<<<<< HEAD
             for (var i = 0; i < 10; i++) {
                 var x = document.getElementById("myTable").rows[i].cells[0];
                 x.style.backgroundColor = color(i);
@@ -180,6 +181,97 @@
                 return d.key;
             }).on("mouseover", mouseover).on("mouseout", mouseout).on("click", mouseclick);
             d3.select("input[type=range]").on("change", function () {
+=======
+        var div = d3.select("body").insert("div", "h2")
+            .style("top", "-80px")
+            .style("left", "-160px")
+            .style("width", w + "px")
+            .style("height", w + "px")
+            .style("position", "absolute")
+            .style("-webkit-backface-visibility", "hidden");
+        
+var color = d3.scale.ordinal()
+    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00", "#1ec4dc","#42444e","#da4264"]);
+var arc = d3.svg.arc()
+    .outerRadius(radius - 100)
+    .innerRadius(radius - 90);
+var pie = d3.layout.pie()
+    .sort(null)
+    .value(function(d) { return d.numberOfSubs; });
+        
+        var svg = div.append("svg:svg")
+            .attr("width", w)
+            .attr("height", w)
+            .append("svg:g")
+            .attr("transform", "translate(" + rx + "," + ry + ")");
+        d3.csv("data.csv", type, function(error, data) {
+  if (error) throw error;
+  var g = svg.selectAll(".arc")
+      .data(pie(data))
+    .enter().append("svg:g")
+      .attr("class", "arc");
+  g.append("path")
+      .attr("d", arc)
+      .style("fill", function(d) { return color(d.data.subgenre); });
+    for(var i = 0; i < 10; i++)
+        {
+            var x = document.getElementById("myTable").rows[i].cells[0];
+            x.style.backgroundColor = color(i);
+        }
+    
+  });
+        var tooltip = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+        svg.append("svg:path")
+            .attr("class", "arc")
+            .attr("d", d3.svg.arc().outerRadius(ry - 120).innerRadius(0).startAngle(0).endAngle(2 * Math.PI))
+            .on("mousedown", mousedown)
+        .on("click", mouseclickontooltip);
+        d3.json("flare-imports.json", function(classes) {
+            var nodes = cluster.nodes(packages.root(classes)),
+                links = packages.imports(nodes),
+                splines = bundle(links);
+            var path = svg.selectAll("path.link")
+                .data(links)
+                .enter().append("svg:path")
+                .attr("class", function(d) {
+                    return "link source-" + d.source.key + " target-" + d.target.key;
+                })
+                .attr("d", function(d, i) {
+                    return line(splines[i]);
+                });
+            svg.selectAll("g.node")
+                .data(nodes.filter(function(n) {
+                    return !n.children;
+                }))
+                .enter().append("svg:g")
+                .attr("class", "node")
+                .attr("id", function(d) {
+                    return "node-" + d.key;
+                })
+                .attr("transform", function(d) {
+                    return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")";
+                })
+                .append("svg:text")
+                .attr("dx", function(d) {
+                    return d.x < 180 ? 20 : -20;
+                })
+                .attr("dy", ".31em")
+                .attr("text-anchor", function(d) {
+                    return d.x < 180 ? "start" : "end";
+                })
+                .attr("transform", function(d) {
+                    return d.x < 180 ? null : "rotate(180)";
+                })
+                .text(function(d) {
+                    return d.key;
+                })
+                .on("mouseover", mouseover)
+                .on("mouseout", mouseout)
+                .on("click", mouseclick);
+            d3.select("input[type=range]").on("change", function() {
+>>>>>>> origin/master
                 line.tension(this.value / 100);
                 path.attr("d", function (d, i) {
                     return line(splines[i]);
