@@ -117,6 +117,8 @@
     <!--    <script type="text/javascript" src="d3/d3.layout.js"></script>-->
     <script type="text/javascript" src="packages.js"></script>
     <script type="text/javascript">
+        var genresDictionary = [];
+
         var w = 1280,
             h = 800,
             rx = w / 2,
@@ -164,6 +166,7 @@
             .attr("height", w)
             .append("svg:g")
             .attr("transform", "translate(" + rx + "," + ry + ")");
+
         d3.csv("data.csv", type, function(error, data) {
             if (error) throw error;
             var g = svg.selectAll(".arc")
@@ -181,18 +184,67 @@
             }
 
         });
+
         var tooltip = d3.select("body").append("div")
             .attr("class", "tooltip")
             .style("opacity", 0);
+
         svg.append("svg:path")
             .attr("class", "arc")
             .attr("d", d3.svg.arc().outerRadius(ry - 120).innerRadius(0).startAngle(0).endAngle(2 * Math.PI))
             .on("mousedown", mousedown)
             .on("click", mouseclickontooltip);
+
         d3.json("flare-imports.json", function(classes) {
             var nodes = cluster.nodes(packages.root(classes)),
                 links = packages.imports(nodes),
                 splines = bundle(links);
+
+            // Create dictionary of genres and sub genres
+            nodes.forEach(function(element) {
+                var split = element["name"].split(".");
+
+                // Add genre and subgenre
+                if (split.length == 3) {
+                    genresDictionary.push({
+                        key: split[1],
+                        value: split[2]
+                    });
+                };
+
+                if ("artist" in element) {
+                    genresDictionary.push({
+                        key: split[2],
+                        value: {
+                            key: "artists",
+                            value: element["artist"]
+                        }
+                    });
+                }
+
+                if ("year" in element) {
+                    genresDictionary.push({
+                        key: split[2],
+                        value: {
+                            key: "year",
+                            value: element["year"]
+                        }
+                    });
+                }
+
+                if ("link" in element) {
+                    genresDictionary.push({
+                        key: split[2],
+                        value: {
+                            key: "link",
+                            value: element["link"]
+                        }
+                    });
+                }
+            });
+
+            console.log(genresDictionary);
+
             var path = svg.selectAll("path.link")
                 .data(links)
                 .enter().append("svg:path")
