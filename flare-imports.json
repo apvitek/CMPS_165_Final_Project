@@ -1,7 +1,7 @@
 [
     {
         "name": "flare.house.New_York",
-        "imports": ["flare.garage.2 Step", "flare.garage.Grime", "flare.garage.UK Garage", "flare.house.Funk House"],
+        "imports": ["flare.garage.2 Step", "flare.garage.Grime", "flare.garage.UK Garage", "flare.house.Funk_House"],
         "year": 1982,
         "artist": ["Larry Levan", "Romanthony", "Oliver Cheatham"],
         "link": "https://play.spotify.com/artist/7wxPD9vDsKD5OuHCeWgXRm"
@@ -14,7 +14,7 @@
         "link": "https://play.spotify.com/artist/3xheu5GJHGT28BGwjXSjoN"
     }
     , {
-        "name": "flare.house.Funk House",
+        "name": "flare.house.Funk_House",
         "imports": ["flare.house.Tribal", "flare.house.French House"],
         "year": 1984,
         "artist": ["Armand Van Helden", "Fab Four", "Angel Alanis"],
@@ -72,7 +72,7 @@
 
 	, {
         "name": "flare.disco.Disco Classic",
-        "imports": ["flare.house.French House", "flare.house.Funk House", "flare.house.New_York", "flare.hip hop.Hip Hop", "flare.techno.Electro", "flare.disco.Nu Disco", "flare.disco.Synthpop", "flare.disco.Electro Pop", "flare.disco.Space Disco"]
+        "imports": ["flare.house.French House", "flare.house.Funk_House", "flare.house.New_York", "flare.hip hop.Hip Hop", "flare.techno.Electro", "flare.disco.Nu Disco", "flare.disco.Synthpop", "flare.disco.Electro Pop", "flare.disco.Space Disco"]
     }
 	, {
         "name": "flare.disco.Space Disco",
