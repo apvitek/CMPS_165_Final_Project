@@ -260,47 +260,80 @@
 
 	, {
         "name": "flare.hardcore.Hardtek",
-        "imports": []
+        "imports": [],
+		"year": 1993,
+		"artist": ["Castlemorton Common Festival", "Windsor Free Festival"],
+		"link": "https://play.spotify.com/user/darksonic90/playlist/6BlrwyVpuwbIcQyyxAn16W"
     }
 	, {
         "name": "flare.hardcore.Hardcore",
-        "imports": ["flare.hardcore.Hardtek", "flare.breaks.Happy_Hardcore", "flare.hardcore.Trancecore", "flare.hardcore.Doomcore", "flare.hardcore.Hardstyle", "flare.hardcore.Speedcore", "flare.hardcore.Schranz", "flare.hardcore.Gabber", "flare.hardcore.French_Core", "flare.hardcore.Breakbeat_Hardcore"]
+        "imports": ["flare.hardcore.Hardtek", "flare.breaks.Happy_Hardcore", "flare.hardcore.Trancecore", "flare.hardcore.Doomcore", "flare.hardcore.Hardstyle", "flare.hardcore.Speedcore", "flare.hardcore.Schranz", "flare.hardcore.Gabber", "flare.hardcore.French_Core", "flare.hardcore.Breakbeat_Hardcore"],
+		"year": 1988,
+		"artist": ["Atari Teenage Riot", "The Prodigy", "Venetian Snares"],
+		"link": "https://play.spotify.com/user/rickcristo/playlist/7zpOg88ichE2Jhinm7wO0Z"
     }
 	, {
         "name": "flare.hardcore.Breakbeat_Hardcore",
-        "imports": ["flare.breaks.Drum_and_Bass", "flare.breaks.Jungle", "flare.breaks.Breakbeat", "flare.breaks.Happy_Hardcore", "flare.hiphop.Instrumental"]
+        "imports": ["flare.breaks.Drum_and_Bass", "flare.breaks.Jungle", "flare.breaks.Breakbeat", "flare.breaks.Happy_Hardcore", "flare.hiphop.Instrumental"],
+		"year": 1988,
+		"artist": ["Shut Up and Dance", "The Prodigy", "Lords of Acid"],
+		"link": "https://play.spotify.com/user/thesoundsofspotify/playlist/3Xf5DQq60Gssc5ccah89wW"
     }
 	, {
         "name": "flare.hardcore.French_Core",
-        "imports": []
+        "imports": [],
+		"year": 1997,
+		"artist": ["Micropoints", "Radium", "The Speed Freak"],
+		"link": "https://play.spotify.com/user/1134429040/playlist/3KUvuF5pLzUY4ENK7FPuVs"
     }
 	, {
         "name": "flare.hardcore.Gabber",
-        "imports": ["flare.hardcore.French_Core", "flare.hardcore.Hardstyle", "flare.hardcore.Speedcore", "flare.hardcore.Industrial_Hardcore"]
+        "imports": ["flare.hardcore.French_Core", "flare.hardcore.Hardstyle", "flare.hardcore.Speedcore", "flare.hardcore.Industrial_Hardcore"],
+		"year": 1992,
+		"artist": ["Masters of Hardcore", "DJ Nosferatu", "Mindcrimers"],
+		"link": "https://play.spotify.com/album/0PvWGdjlilp7peOr6wleOQ"
     }
 	, {
         "name": "flare.hardcore.Schranz",
-        "imports": []
+        "imports": [],
+		"year": 2000,
+		"artist": ["Chris Liebing", "Andre Walter", "Adam Beyer"],
+		"link": "https://play.spotify.com/album/6RSrVsZIQbyqHrHLaHBjjF"
     }
 	, {
         "name": "flare.hardcore.Industrial_Hardcore",
-        "imports": []
+        "imports": [],
+		"year": 2002,
+		"artist": ["Chris Liebing", "Andre Walter", "Adam Beyer"],
+		"link": "https://play.spotify.com/album/7LBs1ZqmXX2c8fG0XkjEeb"
     }
 	, {
         "name": "flare.hardcore.Speedcore",
-        "imports": []
+        "imports": [],
+		"year": 1993,
+		"artist": ["Sorcerer", "Komplex", "M1DYs"],
+		"link": "https://play.spotify.com/user/thesoundsofspotify/playlist/0PScKDOlpRri7jiwVxB1qQ"
     }
 	, {
         "name": "flare.hardcore.Hardstyle",
-        "imports": ["flare.industrial.Aggrotech"]
+        "imports": ["flare.industrial.Aggrotech"],
+		"year": 1999,
+		"artist": ["Showtek", "Headhunters", "Deepack"],
+		"link": "https://play.spotify.com/user/mati_12170/playlist/3lAk9ztH7nXSukdpgxdx7m"
     }
 	, {
         "name": "flare.hardcore.Doomcore",
-        "imports": []
+        "imports": [],
+		"year": 1992,
+		"artist": ["Armageddon Project", "Meagashira", "Hamunaptra"],
+		"link": "https://play.spotify.com/user/thesoundsofspotify/playlist/3OFavLb9tW7gAThaWdthHx"
     }
 	, {
         "name": "flare.hardcore.Trancecore",
-        "imports": []
+        "imports": [],
+		"year": 2003,
+		"artist": ["Ferox", "Ki Real", "Cenobite Records"],
+		"link": "https://play.spotify.com/artist/4wFIVC5yYjN2zelRDm47dT"
     }
 
 
