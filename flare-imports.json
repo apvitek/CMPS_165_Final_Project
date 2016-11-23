@@ -1,7 +1,7 @@
 [
     {
         "name": "flare.house.New_York",
-        "imports": ["flare.garage.2 Step", "flare.garage.Grime", "flare.garage.UK Garage", "flare.house.Funk_House"],
+        "imports": ["flare.garage.2_Step", "flare.garage.Grime", "flare.garage.UK Garage", "flare.house.Funk_House"],
         "year": 1982,
         "artist": ["Larry Levan", "Romanthony", "Oliver Cheatham"],
         "link": "https://play.spotify.com/artist/7wxPD9vDsKD5OuHCeWgXRm"
@@ -330,7 +330,7 @@
         "imports": ["flare.house.Fidget", "flare.breaks.Broken Beat", "flare.garage.UK Funky", "flare.garage.UK Bass", "flare.garage.Future Garage"]
     }
 	, {
-        "name": "flare.garage.2 Step",
+        "name": "flare.garage.2_Step",
         "imports": ["flare.garage.Dubstep"]
     }
 	, {
@@ -372,7 +372,7 @@
     }
 	, {
         "name": "flare.breaks.Jungle",
-        "imports": ["flare.garage.Grime", "flare.garage.2 Step", "flare.breaks.Liquid Funk", "flare.breaks.Drum and Bass"]
+        "imports": ["flare.garage.Grime", "flare.garage.2_Step", "flare.breaks.Liquid Funk", "flare.breaks.Drum and Bass"]
     }
 	, {
         "name": "flare.breaks.Nu Skool Breaks",
