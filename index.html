@@ -278,7 +278,7 @@
                     return d.x < 180 ? null : "rotate(180)";
                 })
                 .text(function(d) {
-                    return d.key;
+                    return d.key.split('_').join(' ');
                 })
                 .on("mouseover", mouseover)
                 .on("mouseout", mouseout)
