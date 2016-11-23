@@ -14,12 +14,13 @@
             font-size: 10px;
         }
         
-        table, td {
-    border: 1px solid grey;
-            float:left;
+        table,
+        td {
+            border: 1px solid grey;
+            float: left;
             display: block;
             font-size: 10px;
-}
+        }
         
         .node:hover {
             fill: #1f77b4;
@@ -54,12 +55,11 @@
             stroke: #2ca02c;
         }
         
-        #genre
-        {
+        #genre {
             border: 0px;
         }
-        #color
-        {
+        
+        #color {
             width: 15px;
             height: 15px;
             border: 0px;
@@ -69,52 +69,52 @@
 
 <body>
     <table id="myTable">
-  <tr>
-    <td id="color"> </td>
-    <td id="genre">Breaks</td>
-  </tr>
-    <tr>
-    <td id="color"> </td>
-    <td id="genre">Disco</td>
-  </tr>
         <tr>
-    <td id="color"> </td>
-    <td id="genre">Downtempo</td>
-  </tr>
+            <td id="color"> </td>
+            <td id="genre">Breaks</td>
+        </tr>
         <tr>
-    <td id="color"> </td>
-    <td id="genre">Garage</td>
-  </tr>
+            <td id="color"> </td>
+            <td id="genre">Disco</td>
+        </tr>
         <tr>
-    <td id="color"> </td>
-    <td id="genre">Hardcore</td>
-  </tr>
-         <tr>
-    <td id="color"> </td>
-    <td id="genre">HipHop</td>
-  </tr>
-         <tr>
-    <td id="color"> </td>
-    <td id="genre">House</td>
-  </tr>
-            <tr>
-    <td id="color"> </td>
-    <td id="genre">Industrial</td>
-  </tr>
-            <tr>
-    <td id="color"> </td>
-    <td id="genre">Techno</td>
-  </tr>
-                  <tr>
-    <td id="color"> </td>
-    <td id="genre">Trance</td>
-  </tr>
-        
-</table>
+            <td id="color"> </td>
+            <td id="genre">Downtempo</td>
+        </tr>
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">Garage</td>
+        </tr>
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">Hardcore</td>
+        </tr>
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">HipHop</td>
+        </tr>
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">House</td>
+        </tr>
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">Industrial</td>
+        </tr>
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">Techno</td>
+        </tr>
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">Trance</td>
+        </tr>
+
+    </table>
     <h2></h2>
     <div style="position:absolute;bottom:0;font-size:18px;">tension: <input style="position:relative;top:3px;" type="range" min="0" max="100" value="85"></div>
     <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
-<!--    <script type="text/javascript" src="d3/d3.layout.js"></script>-->
+    <!--    <script type="text/javascript" src="d3/d3.layout.js"></script>-->
     <script type="text/javascript" src="packages.js"></script>
     <script type="text/javascript">
         var w = 1280,
@@ -123,7 +123,7 @@
             ry = h / 2,
             m0,
             rotate = 0
-            radius = Math.min(w, h) / 2.1;
+        radius = Math.min(w, h) / 2.1;
         var splines = [];
         var cluster = d3.layout.cluster()
             .size([360, ry - 120])
@@ -147,37 +147,40 @@
             .style("height", w + "px")
             .style("position", "absolute")
             .style("-webkit-backface-visibility", "hidden");
-        
-var color = d3.scale.ordinal()
-    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00", "#1ec4dc","#42444e","#da4264"]);
-var arc = d3.svg.arc()
-    .outerRadius(radius - 100)
-    .innerRadius(radius - 90);
-var pie = d3.layout.pie()
-    .sort(null)
-    .value(function(d) { return d.numberOfSubs; });
-        
+
+        var color = d3.scale.ordinal()
+            .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00", "#1ec4dc", "#42444e", "#da4264"]);
+        var arc = d3.svg.arc()
+            .outerRadius(radius - 100)
+            .innerRadius(radius - 90);
+        var pie = d3.layout.pie()
+            .sort(null)
+            .value(function(d) {
+                return d.numberOfSubs;
+            });
+
         var svg = div.append("svg:svg")
             .attr("width", w)
             .attr("height", w)
             .append("svg:g")
             .attr("transform", "translate(" + rx + "," + ry + ")");
         d3.csv("data.csv", type, function(error, data) {
-  if (error) throw error;
-  var g = svg.selectAll(".arc")
-      .data(pie(data))
-    .enter().append("svg:g")
-      .attr("class", "arc");
-  g.append("path")
-      .attr("d", arc)
-      .style("fill", function(d) { return color(d.data.subgenre); });
-    for(var i = 0; i < 10; i++)
-        {
-               var x = document.getElementById("myTable").rows[i].cells[0];
-            x.style.backgroundColor = color(i);
-        }
-    
-  });
+            if (error) throw error;
+            var g = svg.selectAll(".arc")
+                .data(pie(data))
+                .enter().append("svg:g")
+                .attr("class", "arc");
+            g.append("path")
+                .attr("d", arc)
+                .style("fill", function(d) {
+                    return color(d.data.subgenre);
+                });
+            for (var i = 0; i < 10; i++) {
+                var x = document.getElementById("myTable").rows[i].cells[0];
+                x.style.backgroundColor = color(i);
+            }
+
+        });
         var tooltip = d3.select("body").append("div")
             .attr("class", "tooltip")
             .style("opacity", 0);
@@ -185,7 +188,7 @@ var pie = d3.layout.pie()
             .attr("class", "arc")
             .attr("d", d3.svg.arc().outerRadius(ry - 120).innerRadius(0).startAngle(0).endAngle(2 * Math.PI))
             .on("mousedown", mousedown)
-        .on("click", mouseclickontooltip);
+            .on("click", mouseclickontooltip);
         d3.json("flare-imports.json", function(classes) {
             var nodes = cluster.nodes(packages.root(classes)),
                 links = packages.imports(nodes),
@@ -238,13 +241,16 @@ var pie = d3.layout.pie()
         d3.select(window)
             .on("mousemove", mousemove)
             .on("mouseup", mouseup);
+
         function mouse(e) {
             return [e.pageX - rx, e.pageY - ry];
         }
+
         function mousedown() {
             m0 = mouse(d3.event);
             d3.event.preventDefault();
         }
+
         function mousemove() {
             if (m0) {
                 var m1 = mouse(d3.event),
@@ -252,6 +258,7 @@ var pie = d3.layout.pie()
                 div.style("-webkit-transform", "translateY(" + (ry - rx) + "px)rotateZ(" + dm + "deg)translateY(" + (rx - ry) + "px)");
             }
         }
+
         function mouseup() {
             if (m0) {
                 var m1 = mouse(d3.event),
@@ -275,6 +282,7 @@ var pie = d3.layout.pie()
                     });
             }
         }
+
         function mouseover(d) {
             svg.selectAll("path.link.target-" + d.key)
                 .classed("target", true)
@@ -283,6 +291,7 @@ var pie = d3.layout.pie()
                 .classed("source", true)
                 .each(updateNodes("target", true));
         }
+
         function mouseout(d) {
             svg.selectAll("path.link.source-" + d.key)
                 .classed("source", false)
@@ -291,37 +300,40 @@ var pie = d3.layout.pie()
                 .classed("target", false)
                 .each(updateNodes("source", false));
         }
+
         function mouseclick(d) {
             tooltip.transition()
                 .duration(1000)
                 .style("opacity", .95);
             tooltip.html("<strong>Genre: </strong>" + "Disco" + "<span style='color:white'>" + "</span></br>");
         }
-        
+
         function mouseclickontooltip(d) {
             tooltip.transition()
                 .duration(1000)
                 .style("opacity", 0);
         }
+
         function updateNodes(name, value) {
             return function(d) {
                 if (value) this.parentNode.appendChild(this);
                 svg.select("#node-" + d[name].key).classed(name, value);
             };
         }
+
         function cross(a, b) {
             return a[0] * b[1] - a[1] * b[0];
         }
+
         function dot(a, b) {
             return a[0] * b[0] + a[1] * b[1];
         }
-            
-            
-function type(d) {
-  d.numberOfSubs = +d.numberOfSubs;
-  return d;
-}
-       
+
+
+        function type(d) {
+            d.numberOfSubs = +d.numberOfSubs;
+            return d;
+        }
     </script>
 </body>
 
