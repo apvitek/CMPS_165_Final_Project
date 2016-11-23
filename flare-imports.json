@@ -194,11 +194,17 @@
     }
 	, {
         "name": "flare.trance.Tech_Trance",
-        "imports": []
+        "imports": [],
+		"year": 1995,
+		"artist": ["Tiesto", "Marcel Woods", "Marco V"],
+		"link": "https://play.spotify.com/album/2RwYupLo1j8nP1yKGXakHr"
     }
 	, {
         "name": "flare.trance.Uplifting",
-        "imports": []
+        "imports": [],
+		"year": 1995,
+		"artist": ["ATB", "Armin Van Buuren", "Above and Beyond"],
+		"link": "https://play.spotify.com/user/kjellscivic/playlist/6NOonnzJF5rpdBg0QzSw8x"
     }
 
 
@@ -207,27 +213,45 @@
 
 	, {
         "name": "flare.techno.Electro",
-        "imports": ["flare.disco.Electro_Clash", "flare.house.Electro_House", "flare.house.Ambient_House", "flare.breaks.Breakbeat", "flare.downtempo.Nu_Jazz", "flare.techno.Detroit_Techno"]
+        "imports": ["flare.disco.Electro_Clash", "flare.house.Electro_House", "flare.house.Ambient_House", "flare.breaks.Breakbeat", "flare.downtempo.Nu_Jazz", "flare.techno.Detroit_Techno"],
+		"year": 1980,
+		"artist": ["Kraftwerk", "Afrika Bambaataa", "Freestyle"],
+		"link": "https://play.spotify.com/artist/0dmPX6ovclgOy8WWJaFEUU"
     }
 	, {
         "name": "flare.techno.Detroit_Techno",
-        "imports": ["flare.trance.Tech_Trance", "flare.trance.Classic_Trance", "flare.house.Progressive", "flare.house.Tech_House", "flare.downtempo.Idm", "flare.hardcore.Hardcore", "flare.techno.Dub_Techno", "flare.techno.Ambient_Techno", "flare.techno.Acid_Techno", "flare.techno.Minimal"]
+        "imports": ["flare.trance.Tech_Trance", "flare.trance.Classic_Trance", "flare.house.Progressive", "flare.house.Tech_House", "flare.downtempo.Idm", "flare.hardcore.Hardcore", "flare.techno.Dub_Techno", "flare.techno.Ambient_Techno", "flare.techno.Acid_Techno", "flare.techno.Minimal"],
+		"year": 1988,
+		"artist": ["Juan Atkins", "Kevin Saunderson", "Derrick May"],
+		"link": "https://play.spotify.com/user/1230279089/playlist/09psfV6gRZwH0835DJNPfh"
     }
 	, {
         "name": "flare.techno.Minimal",
-        "imports": ["flare.house.Micro", "flare.house.Tech_House"]
+        "imports": ["flare.house.Micro", "flare.house.Tech_House"],
+		"year": 1992,
+		"artist": ["Basic Channel", "Underground Resistance", "Robert Hood"],
+		"link": "https://play.spotify.com/user/alekzanther/playlist/0B3WoheGNqol1B69LM9Y8n"
     }
 	, {
         "name": "flare.techno.Acid_Techno",
-        "imports": ["flare.techno.Minimal"]
+        "imports": ["flare.techno.Minimal"],
+		"year": 1992,
+		"artist": ["Plastikman", "Dave Clarke", "Luke Vibert"],
+		"link": "https://play.spotify.com/album/7f60RgCyVydY9DLwxjGm2e"
     }
 	, {
         "name": "flare.techno.Ambient_Techno",
-        "imports": []
+        "imports": [],
+		"year": 1994,
+		"artist": ["Aphex Twin", "Seefeel", "The Orb"],
+		"link": "https://play.spotify.com/user/grundlepunch/playlist/1fYjRHG8LaPi35izVNlxKe"
     }
 	, {
         "name": "flare.techno.Dub_Techno",
-        "imports": []
+        "imports": [],
+		"year": 1995,
+		"artist": ["Basic Channel", "Deepchord", "Echospace"],
+		"link": "https://play.spotify.com/user/jippiex2k/playlist/51rpsmosMio12mduQcdGab"
     }
 
 
