@@ -1,47 +1,47 @@
 [
     {
         "name": "flare.house.New_York",
-        "imports": ["flare.garage.2_Step", "flare.garage.Grime", "flare.garage.UK Garage", "flare.house.Funk_House"],
+        "imports": ["flare.garage.2_Step", "flare.garage.Grime", "flare.garage.UK_Garage", "flare.house.Funk_House"],
         "year": 1982,
         "artist": ["Larry Levan", "Romanthony", "Oliver Cheatham"],
         "link": "https://play.spotify.com/artist/7wxPD9vDsKD5OuHCeWgXRm"
     }
     , {
         "name": "flare.house.Chicago",
-        "imports": ["flare.techno.Detroit Techno", "flare.house.Fidget", "flare.house.French House", "flare.house.Deep House"],
+        "imports": ["flare.techno.Detroit_Techno", "flare.house.Fidget", "flare.house.French_House", "flare.house.Deep_House"],
         "year": 1980,
         "artist": ["Marshall Jefferson", "Steve Hurley", "Larry Heard"],
         "link": "https://play.spotify.com/artist/3xheu5GJHGT28BGwjXSjoN"
     }
     , {
         "name": "flare.house.Funk_House",
-        "imports": ["flare.house.Tribal", "flare.house.French House"],
+        "imports": ["flare.house.Tribal", "flare.house.French_House"],
         "year": 1984,
         "artist": ["Armand Van Helden", "Fab Four", "Angel Alanis"],
         "link": "https://play.spotify.com/album/22rj5RUnaXcehWLr05mVUy"
     }
     , {
-        "name": "flare.house.Acid House",
-        "imports": ["flare.trance.Acid Trance", "flare.trance.Classic Trance", "flare.techno.Acid Techno", "flare.hardcore.Hardcore", "flare.breaks.Big Beat", "flare.breaks.Funky Breaks", "flare.breaks.Happy Hardcore", "flare.house.Ambient House"]
+        "name": "flare.house.Acid_House",
+        "imports": ["flare.trance.Acid_Trance", "flare.trance.Classic_Trance", "flare.techno.Acid_Techno", "flare.hardcore.Hardcore", "flare.breaks.Big_Beat", "flare.breaks.Funky_Breaks", "flare.breaks.Happy_Hardcore", "flare.house.Ambient_House"]
     }
     , {
-        "name": "flare.house.Tech House",
+        "name": "flare.house.Tech_House",
         "imports": ["flare.hardcore.Gabber"]
     }
     , {
-        "name": "flare.house.Ambient House",
-        "imports": ["flare.downtempo.Acid Jazz"]
+        "name": "flare.house.Ambient_House",
+        "imports": ["flare.downtempo.Acid_Jazz"]
     }
     , {
-        "name": "flare.house.Deep House",
-        "imports": ["flare.garage.UK Garage", "flare.disco.Nu Disco", "flare.house.Balearic Beat", "flare.house.Tribal"]
+        "name": "flare.house.Deep_House",
+        "imports": ["flare.garage.UK_Garage", "flare.disco.Nu_Disco", "flare.house.Balearic_Beat", "flare.house.Tribal"]
     }
     , {
         "name": "flare.house.Tribal",
-        "imports": ["flare.garage.UK Funky"]
+        "imports": ["flare.garage.UK_Funky"]
     }
     , {
-        "name": "flare.house.Balearic Beat",
+        "name": "flare.house.Balearic_Beat",
         "imports": ["flare.trance.Uplifting", "flare.house.Progressive"]
     }
     , {
@@ -53,12 +53,12 @@
         "imports": []
     }
 	, {
-        "name": "flare.house.French House",
-        "imports": ["flare.house.Electro House"]
+        "name": "flare.house.French_House",
+        "imports": ["flare.house.Electro_House"]
     }
 	, {
-        "name": "flare.house.Electro House",
-        "imports": ["flare.garage.UK Funky"]
+        "name": "flare.house.Electro_House",
+        "imports": ["flare.garage.UK_Funky"]
     }
 	, {
         "name": "flare.house.Fidget",
@@ -71,35 +71,35 @@
 
 
 	, {
-        "name": "flare.disco.Disco Classic",
-        "imports": ["flare.house.French House", "flare.house.Funk_House", "flare.house.New_York", "flare.hip hop.Hip Hop", "flare.techno.Electro", "flare.disco.Nu Disco", "flare.disco.Synthpop", "flare.disco.Electro Pop", "flare.disco.Space Disco"]
+        "name": "flare.disco.Disco_Classic",
+        "imports": ["flare.house.French_House", "flare.house.Funk_House", "flare.house.New_York", "flare.hiphop.Hip_Hop", "flare.techno.Electro", "flare.disco.Nu_Disco", "flare.disco.Synthpop", "flare.disco.Electro_Pop", "flare.disco.Space_Disco"]
     }
 	, {
-        "name": "flare.disco.Space Disco",
+        "name": "flare.disco.Space_Disco",
         "imports": []
     }
 	, {
-        "name": "flare.disco.Electro Pop",
-        "imports": ["flare.downtempo.Chillwave", "flare.disco.Electro Clash", "flare.disco.Italo Disco", "flare.disco.Synthpop"]
+        "name": "flare.disco.Electro_Pop",
+        "imports": ["flare.downtempo.Chillwave", "flare.disco.Electro_Clash", "flare.disco.Italo_Disco", "flare.disco.Synthpop"]
     }
 	, {
         "name": "flare.disco.Synthpop",
-        "imports": ["flare.house.Chicago", "flare.downtempo.Chillwave", "flare.industrial.Industrial Dance", "flare.techno.Detroit Techno", "flare.techno.Electro", "flare.disco.Electro Clash", "flare.disco.Hi-nrg"]
+        "imports": ["flare.house.Chicago", "flare.downtempo.Chillwave", "flare.industrial.Industrial_Dance", "flare.techno.Detroit_Techno", "flare.techno.Electro", "flare.disco.Electro_Clash", "flare.disco.Hi-nrg"]
     }
 	, {
         "name": "flare.disco.Hi-nrg",
-        "imports": ["flare.house.Electro House", "flare.industrial.New Beat", "flare.disco.Italo Disco"]
+        "imports": ["flare.house.Electro_House", "flare.industrial.New_Beat", "flare.disco.Italo_Disco"]
     }
 	, {
-        "name": "flare.disco.Italo Disco",
-        "imports": ["flare.house.Balearic Beat", "flare.disco.Nu Disco"]
+        "name": "flare.disco.Italo_Disco",
+        "imports": ["flare.house.Balearic_Beat", "flare.disco.Nu_Disco"]
     }
 	, {
-        "name": "flare.disco.Electro Clash",
+        "name": "flare.disco.Electro_Clash",
         "imports": []
     }
 	, {
-        "name": "flare.disco.Nu Disco",
+        "name": "flare.disco.Nu_Disco",
         "imports": []
     }
 
@@ -108,23 +108,23 @@
 
 
 	, {
-        "name": "flare.trance.Goa Trance",
-        "imports": ["flare.downtempo.Psybient", "flare.trance.Psy Trance"]
+        "name": "flare.trance.Goa_Trance",
+        "imports": ["flare.downtempo.Psybient", "flare.trance.Psy_Trance"]
     }
 	, {
-        "name": "flare.trance.Classic Trance",
-        "imports": ["flare.trance.Goa Trance", "flare.trance.Acid Trance", "flare.trance.Psy Trance", "flare.trance.Tech Trance", "flare.trance.Uplifting"]
+        "name": "flare.trance.Classic_Trance",
+        "imports": ["flare.trance.Goa_Trance", "flare.trance.Acid_Trance", "flare.trance.Psy_Trance", "flare.trance.Tech_Trance", "flare.trance.Uplifting"]
     }
 	, {
-        "name": "flare.trance.Acid Trance",
+        "name": "flare.trance.Acid_Trance",
         "imports": []
     }
 	, {
-        "name": "flare.trance.Psy Trance",
+        "name": "flare.trance.Psy_Trance",
         "imports": ["flare.downtempo.Psybient", "flare.hardcore.Trancecore"]
     }
 	, {
-        "name": "flare.trance.Tech Trance",
+        "name": "flare.trance.Tech_Trance",
         "imports": []
     }
 	, {
@@ -138,26 +138,26 @@
 
 	, {
         "name": "flare.techno.Electro",
-        "imports": ["flare.disco.Electro Clash", "flare.house.Electro House", "flare.house.Ambient House", "flare.breaks.Breakbeat", "flare.downtempo.Nu Jazz", "flare.techno.Detroit Techno"]
+        "imports": ["flare.disco.Electro_Clash", "flare.house.Electro_House", "flare.house.Ambient_House", "flare.breaks.Breakbeat", "flare.downtempo.Nu_Jazz", "flare.techno.Detroit_Techno"]
     }
 	, {
-        "name": "flare.techno.Detroit Techno",
-        "imports": ["flare.trance.Tech Trance", "flare.trance.Classic Trance", "flare.house.Progressive", "flare.house.Tech House", "flare.downtempo.Idm", "flare.hardcore.Hardcore", "flare.techno.Dub Techno", "flare.techno.Ambient Techno", "flare.techno.Acid Techno", "flare.techno.Minimal"]
+        "name": "flare.techno.Detroit_Techno",
+        "imports": ["flare.trance.Tech_Trance", "flare.trance.Classic_Trance", "flare.house.Progressive", "flare.house.Tech_House", "flare.downtempo.Idm", "flare.hardcore.Hardcore", "flare.techno.Dub_Techno", "flare.techno.Ambient_Techno", "flare.techno.Acid_Techno", "flare.techno.Minimal"]
     }
 	, {
         "name": "flare.techno.Minimal",
-        "imports": ["flare.house.Micro", "flare.house.Tech House"]
+        "imports": ["flare.house.Micro", "flare.house.Tech_House"]
     }
 	, {
-        "name": "flare.techno.Acid Techno",
+        "name": "flare.techno.Acid_Techno",
         "imports": ["flare.techno.Minimal"]
     }
 	, {
-        "name": "flare.techno.Ambient Techno",
+        "name": "flare.techno.Ambient_Techno",
         "imports": []
     }
 	, {
-        "name": "flare.techno.Dub Techno",
+        "name": "flare.techno.Dub_Techno",
         "imports": []
     }
 
@@ -171,26 +171,26 @@
     }
 	, {
         "name": "flare.hardcore.Hardcore",
-        "imports": ["flare.hardcore.Hardtek", "flare.breaks.Happy Hardcore", "flare.hardcore.Trancecore", "flare.hardcore.Doomcore", "flare.hardcore.Hardstyle", "flare.hardcore.Speedcore", "flare.hardcore.Schranz", "flare.hardcore.Gabber", "flare.hardcore.French Core", "flare.hardcore.Breakbeat Hardcore"]
+        "imports": ["flare.hardcore.Hardtek", "flare.breaks.Happy_Hardcore", "flare.hardcore.Trancecore", "flare.hardcore.Doomcore", "flare.hardcore.Hardstyle", "flare.hardcore.Speedcore", "flare.hardcore.Schranz", "flare.hardcore.Gabber", "flare.hardcore.French_Core", "flare.hardcore.Breakbeat_Hardcore"]
     }
 	, {
-        "name": "flare.hardcore.Breakbeat Hardcore",
-        "imports": ["flare.breaks.Drum and Bass", "flare.breaks.Jungle", "flare.breaks.Breakbeat", "flare.breaks.Happy Hardcore", "flare.hip hop.Instrumental"]
+        "name": "flare.hardcore.Breakbeat_Hardcore",
+        "imports": ["flare.breaks.Drum_and_Bass", "flare.breaks.Jungle", "flare.breaks.Breakbeat", "flare.breaks.Happy_Hardcore", "flare.hiphop.Instrumental"]
     }
 	, {
-        "name": "flare.hardcore.French Core",
+        "name": "flare.hardcore.French_Core",
         "imports": []
     }
 	, {
         "name": "flare.hardcore.Gabber",
-        "imports": ["flare.hardcore.French Core", "flare.hardcore.Hardstyle", "flare.hardcore.Speedcore", "flare.hardcore.Industrial Hardcore"]
+        "imports": ["flare.hardcore.French_Core", "flare.hardcore.Hardstyle", "flare.hardcore.Speedcore", "flare.hardcore.Industrial_Hardcore"]
     }
 	, {
         "name": "flare.hardcore.Schranz",
         "imports": []
     }
 	, {
-        "name": "flare.hardcore.Industrial Hardcore",
+        "name": "flare.hardcore.Industrial_Hardcore",
         "imports": []
     }
 	, {
@@ -216,26 +216,26 @@
 
 	, {
         "name": "flare.industrial.Industrial",
-        "imports": ["flare.hardcore.Doomcore", "flare.hardcore.Hardstyle", "flare.hardcore.Industrial Hardcore", "flare.hardcore.Gabber", "flare.techno.Acid Techno", "flare.breaks.Breakcore", "flare.downtempo.Idm", "flare.industrial.New Beat", "flare.industrial.Electro Industrial", "flare.industrial.Power Electronics", "flare.industrial.Industrial Dance"]
+        "imports": ["flare.hardcore.Doomcore", "flare.hardcore.Hardstyle", "flare.hardcore.Industrial_Hardcore", "flare.hardcore.Gabber", "flare.techno.Acid_Techno", "flare.breaks.Breakcore", "flare.downtempo.Idm", "flare.industrial.New_Beat", "flare.industrial.Electro_Industrial", "flare.industrial.Power_Electronics", "flare.industrial.Industrial_Dance"]
     }
 	, {
-        "name": "flare.industrial.Industrial Dance",
-        "imports": ["flare.breaks.Big Beat", "flare.industrial.Electro Industrial"]
+        "name": "flare.industrial.Industrial_Dance",
+        "imports": ["flare.breaks.Big_Beat", "flare.industrial.Electro_Industrial"]
     }
 	, {
-        "name": "flare.industrial.Power Electronics",
+        "name": "flare.industrial.Power_Electronics",
         "imports": []
     }
 	, {
-        "name": "flare.industrial.Electro Industrial",
-        "imports": ["flare.trance.Goa Trance", "flare.industrial.Aggrotech", "flare.industrial.Power Noise"]
+        "name": "flare.industrial.Electro_Industrial",
+        "imports": ["flare.trance.Goa_Trance", "flare.industrial.Aggrotech", "flare.industrial.Power_Noise"]
     }
 	, {
-        "name": "flare.industrial.New Beat",
+        "name": "flare.industrial.New_Beat",
         "imports": ["flare.hardcore.Hardcore"]
     }
 	, {
-        "name": "flare.industrial.Power Noise",
+        "name": "flare.industrial.Power_Noise",
         "imports": []
     }
 	, {
@@ -249,11 +249,11 @@
 
 	, {
         "name": "flare.downtempo.Ambient",
-        "imports": ["flare.techno.Ambient Techno", "flare.techno.Minimal", "flare.house.Ambient House", "flare.breaks.Progressive", "flare.hip hop.Trip Hop", "flare.downtempo.Psybient", "flare.downtempo.Idm", "flare.downtempo.Illbient", "flare.downtempo.Chillwave"]
+        "imports": ["flare.techno.Ambient_Techno", "flare.techno.Minimal", "flare.house.Ambient_House", "flare.breaks.Progressive", "flare.hiphop.Trip_Hop", "flare.downtempo.Psybient", "flare.downtempo.Idm", "flare.downtempo.Illbient", "flare.downtempo.Chillwave"]
     }
 	, {
-        "name": "flare.downtempo.Chill Out",
-        "imports": ["flare.trance.Classic Trance"]
+        "name": "flare.downtempo.Chill_Out",
+        "imports": ["flare.trance.Classic_Trance"]
     }
 	, {
         "name": "flare.downtempo.Illbient",
@@ -261,15 +261,15 @@
     }
 	, {
         "name": "flare.downtempo.Idm",
-        "imports": ["flare.house.Micro", "flare.hip hop.Wonky", "flare.hip hop.Glitch Hop"]
+        "imports": ["flare.house.Micro", "flare.hiphop.Wonky", "flare.hiphop.Glitch_Hop"]
     }
 	, {
-        "name": "flare.downtempo.Acid Jazz",
-        "imports": ["flare.breaks.Broken Beat", "flare.downtempo.Nu Jazz"]
+        "name": "flare.downtempo.Acid_Jazz",
+        "imports": ["flare.breaks.Broken_Beat", "flare.downtempo.Nu_Jazz"]
     }
 	, {
-        "name": "flare.downtempo.Nu Jazz",
-        "imports": ["flare.breaks.Broken Beat"]
+        "name": "flare.downtempo.Nu_Jazz",
+        "imports": ["flare.breaks.Broken_Beat"]
     }
 	, {
         "name": "flare.downtempo.Psybient",
@@ -285,39 +285,39 @@
 
 
 	, {
-        "name": "flare.hip hop.Hip Hop",
-        "imports": ["flare.breaks.Drum and Bass", "flare.breaks.Jungle", "flare.garage.UK Bass", "flare.hip hop.Wonky", "flare.hip hop.Glitch Hop", "flare.hip hop.Turntablism", "flare.hip hop.Instrumental", "flare.hip hop.Chop M Screwed", "flare.hip hop.Trip Hop", "flare.hip hop.Jazz Hop", "flare.hip hop.East Coast Rap"]
+        "name": "flare.hiphop.Hip_Hop",
+        "imports": ["flare.breaks.Drum_and_Bass", "flare.breaks.Jungle", "flare.garage.UK_Bass", "flare.hiphop.Wonky", "flare.hiphop.Glitch_Hop", "flare.hiphop.Turntablism", "flare.hiphop.Instrumental", "flare.hiphop.Chop_M_Screwed", "flare.hiphop.Trip_Hop", "flare.hiphop.Jazz_Hop", "flare.hiphop.East_Coast_Rap"]
     }
 	, {
-        "name": "flare.hip hop.East Coast Rap",
+        "name": "flare.hiphop.East_Coast_Rap",
         "imports": ["flare.downtempo.Illbient"]
     }
 	, {
-        "name": "flare.hip hop.Jazz Hop",
+        "name": "flare.hiphop.Jazz_Hop",
         "imports": []
     }
 	, {
-        "name": "flare.hip hop.Trip Hop",
-        "imports": ["flare.downtempo.Illbient", "flare.garage.Future Garage", "flare.hip hop.Instrumental"]
+        "name": "flare.hiphop.Trip_Hop",
+        "imports": ["flare.downtempo.Illbient", "flare.garage.Future_Garage", "flare.hiphop.Instrumental"]
     }
 	, {
-        "name": "flare.hip hop.Chop M Screwed",
+        "name": "flare.hiphop.Chop_M_Screwed",
         "imports": []
     }
 	, {
-        "name": "flare.hip hop.Instrumental",
+        "name": "flare.hiphop.Instrumental",
         "imports": []
     }
 	, {
-        "name": "flare.hip hop.Turntablism",
+        "name": "flare.hiphop.Turntablism",
         "imports": ["flare.breaks.Breakbeat"]
     }
 	, {
-        "name": "flare.hip hop.Glitch Hop",
+        "name": "flare.hiphop.Glitch_Hop",
         "imports": []
     }
 	, {
-        "name": "flare.hip hop.Wonky",
+        "name": "flare.hiphop.Wonky",
         "imports": []
     }
 
@@ -326,15 +326,15 @@
 
 
 	, {
-        "name": "flare.garage.UK Garage",
-        "imports": ["flare.house.Fidget", "flare.breaks.Broken Beat", "flare.garage.UK Funky", "flare.garage.UK Bass", "flare.garage.Future Garage"]
+        "name": "flare.garage.UK_Garage",
+        "imports": ["flare.house.Fidget", "flare.breaks.Broken_Beat", "flare.garage.UK_Funky", "flare.garage.UK_Bass", "flare.garage.Future_Garage"]
     }
 	, {
         "name": "flare.garage.2_Step",
         "imports": ["flare.garage.Dubstep"]
     }
 	, {
-        "name": "flare.garage.Future Garage",
+        "name": "flare.garage.Future_Garage",
         "imports": []
     }
 	, {
@@ -343,14 +343,14 @@
     }
 	, {
         "name": "flare.garage.Dubstep",
-        "imports": ["flare.garage.Future Garage", "flare.hip hop.Wonky"]
+        "imports": ["flare.garage.Future_Garage", "flare.hiphop.Wonky"]
     }
 	, {
-        "name": "flare.garage.UK Bass",
+        "name": "flare.garage.UK_Bass",
         "imports": []
     }
 	, {
-        "name": "flare.garage.UK Funky",
+        "name": "flare.garage.UK_Funky",
         "imports": []
     }
 
@@ -360,34 +360,34 @@
 
 	, {
         "name": "flare.breaks.Breakbeat",
-        "imports": ["flare.hip hop.Trip Hop", "flare.hardcore.Breakbeat Hardcore", "flare.breaks.Big Beat", "flare.breaks.Funky Breaks"]
+        "imports": ["flare.hiphop.Trip_Hop", "flare.hardcore.Breakbeat_Hardcore", "flare.breaks.Big_Beat", "flare.breaks.Funky_Breaks"]
     }
 	, {
-        "name": "flare.breaks.Funky Breaks",
-        "imports": ["flare.breaks.Nu Skool Breaks"]
+        "name": "flare.breaks.Funky_Breaks",
+        "imports": ["flare.breaks.Nu_Skool_Breaks"]
     }
 	, {
-        "name": "flare.breaks.Happy Hardcore",
+        "name": "flare.breaks.Happy_Hardcore",
         "imports": []
     }
 	, {
         "name": "flare.breaks.Jungle",
-        "imports": ["flare.garage.Grime", "flare.garage.2_Step", "flare.breaks.Liquid Funk", "flare.breaks.Drum and Bass"]
+        "imports": ["flare.garage.Grime", "flare.garage.2_Step", "flare.breaks.Liquid_Funk", "flare.breaks.Drum_and_Bass"]
     }
 	, {
-        "name": "flare.breaks.Nu Skool Breaks",
+        "name": "flare.breaks.Nu_Skool_Breaks",
         "imports": ["flare.breaks.Progressive"]
     }
 	, {
-        "name": "flare.breaks.Big Beat",
-        "imports": ["flare.breaks.Funky Breaks"]
+        "name": "flare.breaks.Big_Beat",
+        "imports": ["flare.breaks.Funky_Breaks"]
     }
 	, {
-        "name": "flare.breaks.Drum and Bass",
-        "imports": ["flare.breaks.Nu Skool Breaks", "flare.garage.Dubstep", "flare.garage.Grime", "flare.breaks.Liquid Funk", "flare.breaks.Neuro Funk", "flare.breaks.Breakcore"]
+        "name": "flare.breaks.Drum_and_Bass",
+        "imports": ["flare.breaks.Nu_Skool_Breaks", "flare.garage.Dubstep", "flare.garage.Grime", "flare.breaks.Liquid_Funk", "flare.breaks.Neuro_Funk", "flare.breaks.Breakcore"]
     }
 	, {
-        "name": "flare.breaks.Broken Beat",
+        "name": "flare.breaks.Broken_Beat",
         "imports": []
     }
 	, {
@@ -399,11 +399,11 @@
         "imports": ["flare.hardcore.Speedcore"]
     }
 	, {
-        "name": "flare.breaks.Neuro Funk",
+        "name": "flare.breaks.Neuro_Funk",
         "imports": []
     }
 	, {
-        "name": "flare.breaks.Liquid Funk",
+        "name": "flare.breaks.Liquid_Funk",
         "imports": []
     }
 
