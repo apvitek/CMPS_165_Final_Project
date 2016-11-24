@@ -213,6 +213,10 @@ h3 {
     font-size: 18px;
 }
 
+h4 {
+    font: 300 15px "Helvetica Neue";
+}
+
 .invert {
     background: #1f1f1f;
     color: #dcdccc;
