@@ -345,7 +345,7 @@
             var genreName = d.name.split(".")[1].split('_').join(' ').replace(/\b\w/g, l => l.toUpperCase());
             
             var subGenreName = d.name.split(".")[2].split('_').join(' ');
-            tooltip.html("</br></br></br><strong>" + genreName + "</strong></br></br><strong>Sub Genre: </strong><span style='color:white'>" + subGenreName + "</span></br>" + "</br><strong>Notable Artists: </strong> <span style='color:white'>" + d.artist.join(', ') + "</span></br>" + "</br><strong>Year: </strong> <span style='color:white'>" + d.year + "</span></br></br>" + "<iframe src=\"https://embed.spotify.com/?uri=spotify:" + d.link + "\" width=\"300\" height=\"300\" frameborder=\"0\" allowtransparency=\"true\"></iframe></span></br>");
+            tooltip.html("</br><strong><font size=\"15\">" + genreName + "</font></strong></br></br><strong>Sub Genre: </strong><span style='color:white'>" + subGenreName + "</span></br>" + "</br><strong>Notable Artists: </strong> <span style='color:white'>" + d.artist.join(', ') + "</span></br>" + "</br><strong>Year: </strong> <span style='color:white'>" + d.year + "</span></br></br>" + "<iframe src=\"https://embed.spotify.com/?uri=spotify:" + d.link + "&theme=white\" width=\"300\" height=\"300\" frameborder=\"0\" allowtransparency=\"true\"></iframe></span></br>");
             
             tooltip.transition().duration(1000).style("opacity", .95);
             document.getElementById("tooltip").style.pointerEvents = "auto";
