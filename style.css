@@ -256,13 +256,13 @@ body>svg {
 div.tooltip {
     position: absolute;
     text-align: center;
-    top: 176px;
-    left: 203px;
-    width: 550px;
-    height: 550px;
+    top: 172px;
+    left: 199px;
+    width: 558px;
+    height: 558px;
     padding: 2px;
     font: 15px "Helvetica Neue";
-    background: lightgray;
+    background: white;
     border: 0px;
-    border-radius: 275px;
+    border-radius: 279px;
 }
