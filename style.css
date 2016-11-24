@@ -4,11 +4,12 @@ path.arc {
 }
 
 .node {
-    font-size: 10px;
+    font: 300 10px "Helvetica Neue"
 }
 
 table {
-    margin-top: 10px;
+    margin-top: 30px;
+    font: 300 30px "Helvetica Neue"
 }
 
 table,
@@ -145,7 +146,6 @@ td {
 }
 
 body {
-    font: 300 30px "Helvetica Neue";
     height: 640px;
     margin: auto auto auto auto;
     overflow: hidden;
@@ -184,15 +184,14 @@ body>ul {
 }
 
 h1 {
-    font-size: 10;
+    font: 300 30px "Helvetica Neue" bold;
     text-align: center;
+    margin: 5px;
 }
 
-h1,
-h2,
-h3 {
-    font-weight: inherit;
-    margin: 0;
+p1 {
+    font: 300 15px "Helvetica Neue";
+    text-align: center;
 }
 
 h2,
