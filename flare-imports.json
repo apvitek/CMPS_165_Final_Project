@@ -342,31 +342,52 @@
 
 	, {
         "name": "flare.industrial.Industrial",
-        "imports": ["flare.hardcore.Doomcore", "flare.hardcore.Hardstyle", "flare.hardcore.Industrial_Hardcore", "flare.hardcore.Gabber", "flare.techno.Acid_Techno", "flare.breaks.Breakcore", "flare.downtempo.Idm", "flare.industrial.New_Beat", "flare.industrial.Electro_Industrial", "flare.industrial.Power_Electronics", "flare.industrial.Industrial_Dance"]
+        "imports": ["flare.hardcore.Doomcore", "flare.hardcore.Hardstyle", "flare.hardcore.Industrial_Hardcore", "flare.hardcore.Gabber", "flare.techno.Acid_Techno", "flare.breaks.Breakcore", "flare.downtempo.Idm", "flare.industrial.New_Beat", "flare.industrial.Electro_Industrial", "flare.industrial.Power_Electronics", "flare.industrial.Industrial_Dance"],
+		"year": 1972,
+		"artist": ["Throbbing Gristle", "Cabaret Voltaire", "Boyd Rice"],
+		"link": "https://play.spotify.com/album/6KxHgTRXLCs70Mn5kkal3C"
     }
 	, {
         "name": "flare.industrial.Industrial_Dance",
-        "imports": ["flare.breaks.Big_Beat", "flare.industrial.Electro_Industrial"]
+        "imports": ["flare.breaks.Big_Beat", "flare.industrial.Electro_Industrial"],
+		"year": 1982,
+		"artist": ["Kraftwerk", "Cabaret Voltaire", "D.A.F."],
+		"link": "https://play.spotify.com/user/darklark/playlist/1EYT0pDSIBm8GVlehKMKq4"
     }
 	, {
         "name": "flare.industrial.Power_Electronics",
-        "imports": []
+        "imports": [],
+		"year": 1983,
+		"artist": ["Philip Best", "Sutcliffe Jugend", "The Eugenics Council"],
+		"link": "https://play.spotify.com/user/thesoundsofspotify/playlist/5kAulE1JAusA4SlfP0OjYG"
     }
 	, {
         "name": "flare.industrial.Electro_Industrial",
-        "imports": ["flare.trance.Goa_Trance", "flare.industrial.Aggrotech", "flare.industrial.Power_Noise"]
+        "imports": ["flare.trance.Goa_Trance", "flare.industrial.Aggrotech", "flare.industrial.Power_Noise"],
+		"year": 1987,
+		"artist": ["Skinny Puppy", "Front Line Assembly", "SPK"],
+		"link": "https://play.spotify.com/user/thesoundsofspotify/playlist/2DmqZ2vZQNftNYjlMiL13d"
     }
 	, {
         "name": "flare.industrial.New_Beat",
-        "imports": ["flare.hardcore.Hardcore"]
+        "imports": ["flare.hardcore.Hardcore"],
+		"year": 1988,
+		"artist": ["Front 242", "The Neon Judgement", "Fat Gadget"],
+		"link": "https://play.spotify.com/user/1257705521/playlist/2DC8bUfLxbALukiz7x8zCQ"
     }
 	, {
         "name": "flare.industrial.Power_Noise",
-        "imports": []
+        "imports": [],
+		"year": 1996,
+		"artist": ["Esplendor Geometrico", "Noisex", "Wumpscut"],
+		"link": "https://play.spotify.com/user/hilarion/playlist/0EfF7DDwjJbLmukAKNxeR7"
     }
 	, {
         "name": "flare.industrial.Aggrotech",
-        "imports": []
+        "imports": [],
+		"year": 1998,
+		"artist": ["Esplendor Geometrico", "Noisex", "Wumpscut"],
+		"link": "https://play.spotify.com/user/xjk2572552l/playlist/5DVFgB0Rc1kAX6SbkcUx1i"
     }
 
 
@@ -375,35 +396,59 @@
 
 	, {
         "name": "flare.downtempo.Ambient",
-        "imports": ["flare.techno.Ambient_Techno", "flare.techno.Minimal", "flare.house.Ambient_House", "flare.breaks.Progressive", "flare.hiphop.Trip_Hop", "flare.downtempo.Psybient", "flare.downtempo.Idm", "flare.downtempo.Illbient", "flare.downtempo.Chillwave"]
+        "imports": ["flare.techno.Ambient_Techno", "flare.techno.Minimal", "flare.house.Ambient_House", "flare.breaks.Progressive", "flare.hiphop.Trip_Hop", "flare.downtempo.Psybient", "flare.downtempo.Idm", "flare.downtempo.Illbient", "flare.downtempo.Chillwave"],
+		"year": 1989,
+		"artist": ["Brian Eno", "Aphex Twin", "Auterche"],
+		"link": "https://play.spotify.com/user/alexanderengels/playlist/3XtuunZjZlY61NkJYZgz3l"
     }
 	, {
         "name": "flare.downtempo.Chill_Out",
-        "imports": ["flare.trance.Classic_Trance"]
+        "imports": ["flare.trance.Classic_Trance"],
+		"year": 1999,
+		"artist": ["Chicane", "Zero 7", "Roger Shah"],
+		"link": "https://play.spotify.com/user/spotify/playlist/67rsdtfs0BJIiQYQWKQU95"
     }
 	, {
         "name": "flare.downtempo.Illbient",
-        "imports": []
+        "imports": [],
+		"year": 1994,
+		"artist": ["We", "Spectre", "Scorn"],
+		"link": "https://play.spotify.com/user/thesoundsofspotify/playlist/16DJDyPE1YLvK8sz1gkrGL"
     }
 	, {
         "name": "flare.downtempo.Idm",
-        "imports": ["flare.house.Micro", "flare.hiphop.Wonky", "flare.hiphop.Glitch_Hop"]
+        "imports": ["flare.house.Micro", "flare.hiphop.Wonky", "flare.hiphop.Glitch_Hop"],
+		"year": 1993,
+		"artist": ["Autechre", "Gescom", "Aphex Twin"],
+		"link": "https://play.spotify.com/user/fliplock/playlist/7GQ7wmIRnOexhiR8iWH3Da"
     }
 	, {
         "name": "flare.downtempo.Acid_Jazz",
-        "imports": ["flare.breaks.Broken_Beat", "flare.downtempo.Nu_Jazz"]
+        "imports": ["flare.breaks.Broken_Beat", "flare.downtempo.Nu_Jazz"],
+		"year": 1986,
+		"artist": ["Raw Instinct", "Matteo and Matos", "Ronny Jordan"],
+		"link": "https://play.spotify.com/user/121005385/playlist/0qxuO4u5tNHdGxZ7hUEONj"
     }
 	, {
         "name": "flare.downtempo.Nu_Jazz",
-        "imports": ["flare.breaks.Broken_Beat"]
+        "imports": ["flare.breaks.Broken_Beat"],
+		"year": 1997,
+		"artist": ["9 Lazy 9", "Funki Porcini", "Hedfunk"],
+		"link": "https://play.spotify.com/album/3dm3d6wid9PbLcje8NHagG"
     }
 	, {
         "name": "flare.downtempo.Psybient",
-        "imports": []
+        "imports": [],
+		"year": 1998,
+		"artist": ["Cosmosis", "Sphongle", "Sundog"],
+		"link": "https://play.spotify.com/user/benxander/playlist/53NHlwLR9TOQAwAhPeYWOw"
     }
 	, {
         "name": "flare.downtempo.Chillwave",
-        "imports": []
+        "imports": [],
+		"year": 2007,
+		"artist": ["Washed Out", "Com Truise", "Neon Indian"],
+		"link": "https://play.spotify.com/album/2fWfWSjb8qj2uzJfWfQCt5"
     }
 
 
@@ -412,39 +457,66 @@
 
 	, {
         "name": "flare.hiphop.Hip_Hop",
-        "imports": ["flare.breaks.Drum_and_Bass", "flare.breaks.Jungle", "flare.garage.UK_Bass", "flare.hiphop.Wonky", "flare.hiphop.Glitch_Hop", "flare.hiphop.Turntablism", "flare.hiphop.Instrumental", "flare.hiphop.Chop_M_Screwed", "flare.hiphop.Trip_Hop", "flare.hiphop.Jazz_Hop", "flare.hiphop.East_Coast_Rap"]
+        "imports": ["flare.breaks.Drum_and_Bass", "flare.breaks.Jungle", "flare.garage.UK_Bass", "flare.hiphop.Wonky", "flare.hiphop.Glitch_Hop", "flare.hiphop.Turntablism", "flare.hiphop.Instrumental", "flare.hiphop.Chop_M_Screwed", "flare.hiphop.Trip_Hop", "flare.hiphop.Jazz_Hop", "flare.hiphop.East_Coast_Rap"],
+		"year": 1970,
+		"artist": ["Grandmaster Flash", "Afrika Bambaataa", "The Sugrahill Gang"],
+		"link": "https://play.spotify.com/artist/7zliF6Q946WznVk3ZMYhZX"
     }
 	, {
         "name": "flare.hiphop.East_Coast_Rap",
-        "imports": ["flare.downtempo.Illbient"]
+        "imports": ["flare.downtempo.Illbient"],
+		"year": 1971,
+		"artist": ["Public Enemy", "A Tribe Called Quest", "The Jungle Brothers"],
+		"link": "https://play.spotify.com/user/1294750315/playlist/4kszW7tcAE2X0w1F2wxhXR"
     }
 	, {
         "name": "flare.hiphop.Jazz_Hop",
-        "imports": []
+        "imports": [],
+		"year": 1988,
+		"artist": ["Native Tongues Posse", "The Low End Theory", "Dream Warriors"],
+		"link": "https://play.spotify.com/user/thepizzagallery/playlist/5hoFoNWMQdzD71YTIv7scw"
     }
 	, {
         "name": "flare.hiphop.Trip_Hop",
-        "imports": ["flare.downtempo.Illbient", "flare.garage.Future_Garage", "flare.hiphop.Instrumental"]
+        "imports": ["flare.downtempo.Illbient", "flare.garage.Future_Garage", "flare.hiphop.Instrumental"],
+		"year": 1992,
+		"artist": ["Massive Attack", "Portishead", "Tricky"],
+		"link": "https://play.spotify.com/user/desiballer798/playlist/5HzTvPxvGL1V0LYJpULEZA"
     }
 	, {
         "name": "flare.hiphop.Chop_M_Screwed",
-        "imports": []
+        "imports": [],
+		"year": 1992,
+		"artist": ["DJ Screwed", "Three 6 Mafia", "8Ball & MJG"],
+		"link": "https://play.spotify.com/user/virvelkocko/playlist/2zKe94Bv0o5UqLJoWHgRsI"
     }
 	, {
         "name": "flare.hiphop.Instrumental",
-        "imports": []
+        "imports": [],
+		"year": 1995,
+		"artist": ["DJ Shadow", "Madlib", "MF Doom"],
+		"link": "https://play.spotify.com/album/6fEpe3TlMVyOvXOGeNtu9E"
     }
 	, {
         "name": "flare.hiphop.Turntablism",
-        "imports": ["flare.breaks.Breakbeat"]
+        "imports": ["flare.breaks.Breakbeat"],
+		"year": 1992,
+		"artist": ["DJ Qbert", "Kid Koala", "Cut Chemist"],
+		"link": "https://play.spotify.com/user/thesoundsofspotify/playlist/5ZkLWGmHP329LAyPnpvydQ"
     }
 	, {
         "name": "flare.hiphop.Glitch_Hop",
-        "imports": []
+        "imports": [],
+		"year": 1997,
+		"artist": ["The Glitch Mob", "Brainfeeder", "Flying Lotus"],
+		"link": "https://play.spotify.com/user/jean9/playlist/3bHsxzcllh4CtvYT8X2ND7"
     }
 	, {
         "name": "flare.hiphop.Wonky",
-        "imports": []
+        "imports": [],
+		"year": 2008,
+		"artist": ["Flying Lotus", "Tokimonsta", "Samiyam"],
+		"link": "https://play.spotify.com/user/jean9/playlist/3bHsxzcllh4CtvYT8X2ND7"
     }
 
 
@@ -453,31 +525,52 @@
 
 	, {
         "name": "flare.garage.UK_Garage",
-        "imports": ["flare.house.Fidget", "flare.breaks.Broken_Beat", "flare.garage.UK_Funky", "flare.garage.UK_Bass", "flare.garage.Future_Garage"]
+        "imports": ["flare.house.Fidget", "flare.breaks.Broken_Beat", "flare.garage.UK_Funky", "flare.garage.UK_Bass", "flare.garage.Future_Garage"],
+		"year": 1992,
+		"artist": ["Todd Edwards", "Grant Nelson", "M.J.Cole"],
+		"link": "https://play.spotify.com/album/335vcloeLtdBse0LoXZwqd"
     }
 	, {
         "name": "flare.garage.2_Step",
-        "imports": ["flare.garage.Dubstep"]
+        "imports": ["flare.garage.Dubstep"],
+		"year": 1998,
+		"artist": ["The Artful Dodger", "Horsepower Porductions", "Zed Bias"],
+		"link": "https://play.spotify.com/album/3Tja1SO5PP5amMhIGIktTV"
     }
 	, {
         "name": "flare.garage.Future_Garage",
-        "imports": []
+        "imports": [],
+		"year": 2009,
+		"artist": ["Whistla", "Submerse", "Sully"],
+		"link": "https://play.spotify.com/user/thesoundsofspotify/playlist/62T9WUAB2E7Xw6PmHRSlaQ"
     }
 	, {
         "name": "flare.garage.Grime",
-        "imports": ["flare.garage.Dubstep"]
+        "imports": ["flare.garage.Dubstep"],
+		"year": 2003,
+		"artist": ["Dizzee Rascal", "Wiley", "Roll Deep"],
+		"link": "https://play.spotify.com/user/filtr/playlist/3gZUBqwTQ46Rta9a2ZPdt4"
     }
 	, {
         "name": "flare.garage.Dubstep",
-        "imports": ["flare.garage.Future_Garage", "flare.hiphop.Wonky"]
+        "imports": ["flare.garage.Future_Garage", "flare.hiphop.Wonky"],
+		"year": 1999,
+		"artist": ["Skream", "Benga", "Burial"],
+		"link": "https://play.spotify.com/user/spotify/playlist/6iFNvTHtyKvexTwEpEZwl7"
     }
 	, {
         "name": "flare.garage.UK_Bass",
-        "imports": []
+        "imports": [],
+		"year": 2006,
+		"artist": ["Example", "Chase and Status", "Wretch 32"],
+		"link": "https://play.spotify.com/user/1170150920/playlist/2xdrQorG8oUIHp7BeHIHIm"
     }
 	, {
         "name": "flare.garage.UK_Funky",
-        "imports": []
+        "imports": [],
+		"year": 2006,
+		"artist": ["Karizma", "Masters At Work", "Dennis Ferrer"],
+		"link": "https://play.spotify.com/user/1125140616/playlist/1I8bDMwRW4hzw3a8u3htJm"
     }
 
 
@@ -486,51 +579,87 @@
 
 	, {
         "name": "flare.breaks.Breakbeat",
-        "imports": ["flare.hiphop.Trip_Hop", "flare.hardcore.Breakbeat_Hardcore", "flare.breaks.Big_Beat", "flare.breaks.Funky_Breaks"]
+        "imports": ["flare.hiphop.Trip_Hop", "flare.hardcore.Breakbeat_Hardcore", "flare.breaks.Big_Beat", "flare.breaks.Funky_Breaks"],
+		"year": 1982,
+		"artist": ["Afrika Bambaataa", "Deekline", "Whodini"],
+		"link": "https://play.spotify.com/user/2124x7ygzogqiugrmeot7qfdi/playlist/3HWVHhe8npbS2t1256psUP"
     }
 	, {
         "name": "flare.breaks.Funky_Breaks",
-        "imports": ["flare.breaks.Nu_Skool_Breaks"]
+        "imports": ["flare.breaks.Nu_Skool_Breaks"],
+		"year": 1992,
+		"artist": ["The Quantic Soul Orchestra", "The Bamboos", "A Skillz"],
+		"link": "https://play.spotify.com/user/thesoundsofspotify/playlist/4r7k2gHiV5NG8ErBhXySbS"
     }
 	, {
         "name": "flare.breaks.Happy_Hardcore",
-        "imports": []
+        "imports": [],
+		"year": 1992,
+		"artist": ["Scott Brown", "Darren Styles", "Hixxy"],
+		"link": "https://play.spotify.com/album/6E7IEApUPrl9hyWmE2Mdno"
     }
 	, {
         "name": "flare.breaks.Jungle",
-        "imports": ["flare.garage.Grime", "flare.garage.2_Step", "flare.breaks.Liquid_Funk", "flare.breaks.Drum_and_Bass"]
+        "imports": ["flare.garage.Grime", "flare.garage.2_Step", "flare.breaks.Liquid_Funk", "flare.breaks.Drum_and_Bass"],
+		"year": 1993,
+		"artist": ["Aphrodite", "Shy FX", "DJ Hype"],
+		"link": "https://play.spotify.com/artist/1SsdsVIIKLUe54OsHzm5uQ"
     }
 	, {
         "name": "flare.breaks.Nu_Skool_Breaks",
-        "imports": ["flare.breaks.Progressive"]
+        "imports": ["flare.breaks.Progressive"],
+		"year": 1999,
+		"artist": ["Tipper", "Plump DJs", "NAPT"],
+		"link": "https://play.spotify.com/album/4g2hV3OLpiQrWKkCnjBDk5"
     }
 	, {
         "name": "flare.breaks.Big_Beat",
-        "imports": ["flare.breaks.Funky_Breaks"]
+        "imports": ["flare.breaks.Funky_Breaks"],
+		"year": 1996,
+		"artist": ["The Prodigy", "Fatboy Slim", "The Chemical Brothers"],
+		"link": "https://play.spotify.com/album/6RjP4QnPfUsrTSEKNLHgKz"
     }
 	, {
         "name": "flare.breaks.Drum_and_Bass",
-        "imports": ["flare.breaks.Nu_Skool_Breaks", "flare.garage.Dubstep", "flare.garage.Grime", "flare.breaks.Liquid_Funk", "flare.breaks.Neuro_Funk", "flare.breaks.Breakcore"]
+        "imports": ["flare.breaks.Nu_Skool_Breaks", "flare.garage.Dubstep", "flare.garage.Grime", "flare.breaks.Liquid_Funk", "flare.breaks.Neuro_Funk", "flare.breaks.Breakcore"],
+		"year": 1992,
+		"artist": ["Goldie", "Roni Size", "Plug"],
+		"link": "https://play.spotify.com/user/soundrop/playlist/5MG037sSypV015Ns1U6UwA"
     }
 	, {
         "name": "flare.breaks.Broken_Beat",
-        "imports": []
+        "imports": [],
+		"year": 1993,
+		"artist": ["IG Culture", "4 Hero", "Bugz in the Attic"],
+		"link": "https://play.spotify.com/user/1257319298/playlist/7yYaTwdX4vrwv0RLsJXqYl"
     }
 	, {
         "name": "flare.breaks.Progressive",
-        "imports": []
+        "imports": [],
+		"year": 1992,
+		"artist": ["Burufunk", "Luke Chable", "Phil K"],
+		"link": "https://play.spotify.com/album/1TuFU7r0VT85eNNqsD1xki"
     }
 	, {
         "name": "flare.breaks.Breakcore",
-        "imports": ["flare.hardcore.Speedcore"]
+        "imports": ["flare.hardcore.Speedcore"],
+		"year": 1997,
+		"artist": ["DJ Rupture", "Teamshadetek", "Alec Empire"],
+		"link": "https://play.spotify.com/album/1ORl5IfTg3yF9UQwgKX2cD"
     }
 	, {
         "name": "flare.breaks.Neuro_Funk",
-        "imports": []
+        "imports": [],
+		"year": 1998,
+		"artist": ["Black Sun Empire", "Psion", "Teebee"],
+		"link": "https://play.spotify.com/album/3UYEzte58xqAqLJaBTy38j"
     }
 	, {
         "name": "flare.breaks.Liquid_Funk",
-        "imports": []
+        "imports": [],
+		"year": 2007,
+		"artist": ["Calibre", "Netsky", "Logistics"],
+		"link": "https://play.spotify.com/user/1253842/playlist/5yb4olonApvaO9LlmQXS88"
     }
 
 ]
