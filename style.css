@@ -8,7 +8,7 @@ path.arc {
 }
 
 table {
-    margin-top: 30px;
+    margin-top: 90px;
     font: 300 30px "Helvetica Neue"
 }
 
@@ -250,6 +250,17 @@ h4 {
     color: #1181B8;
 }
 
+body
+{
+    overflow-y: scroll;
+}
+
+.node:hover
+{
+    cursor: pointer;
+    font-size: 14px;s
+}
+
 body>svg {
     position: absolute;
     top: -80px;
@@ -259,7 +270,7 @@ body>svg {
 div.tooltip {
     position: absolute;
     text-align: center;
-    top: 172px;
+    top: 212px;
     left: 199px;
     width: 558px;
     height: 558px;
