@@ -66,7 +66,7 @@
         </div>
     </h4>
 
-    <div>
+    <div style="background-color:white;">
         <h5>
             <b>Mounted from GitHub</b><br><br>
             <b>Created by:</b><br>Arseniy Khmelizde, Andrea Vitek, and Eyad Murshid in collaboration with Suresh K Lodha<br><br>
@@ -96,6 +96,8 @@
             </div>
         </h5>
         </div>
+    
+    
         <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
         <script>
             (function() {
@@ -153,7 +155,7 @@
                 rx = w / 2,
                 ry = h / 1.5,
                 m0, rotate = 0
-            var pathOp = 0.4;
+            var pathOp = 1;
             radius = Math.min(w, h) / 2.1;
             var splines = [];
             var cluster = d3.layout.cluster().size([360, ry - 250]).sort(function(a, b) {
@@ -316,10 +318,10 @@
 
             function increaseStroke() {
                 var x = document.getElementsByClassName("link");
-                if (pathOp < 1.0) {
-                    pathOp += 0.2;
+                if (pathOp < 3.0) {
+                    pathOp += 0.5;
                     for (var i = 0, ii = x.length; i < ii; i++) {
-                        x[i].style.strokeOpacity = pathOp;
+                        x[i].style.strokeWidth = pathOp + "px";
                     };
                 } else {
                     console.log("Already big")
@@ -328,10 +330,10 @@
 
             function decreaseStroke() {
                 var x = document.getElementsByClassName("link");
-                if (pathOp > 0.3) {
-                    pathOp -= 0.2;
+                if (pathOp > 0.5) {
+                    pathOp -= 0.5;
                     for (var i = 0, ii = x.length; i < ii; i++) {
-                        x[i].style.strokeOpacity = pathOp;
+                        x[i].style.strokeWidth = pathOp + "px";
                     };
                 } else {
                     console.log("Already small")
