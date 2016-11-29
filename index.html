@@ -248,7 +248,6 @@
             document.getElementById("tooltip").style.pointerEvents = "auto";
 
             mouseout(d);
-            svg.selectAll("g.node").opacity(0);
             animationEnabled = false;
         }
 
@@ -264,6 +263,7 @@
                 svg.select("#node-" + d[name].key).classed(name, value);
             };
         }
+
 
         function cross(a, b) {
             return a[0] * b[1] - a[1] * b[0];
