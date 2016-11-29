@@ -153,7 +153,6 @@ td {
     background: #33a6cc;
 }
 
-.btn-primary:active,
 .btn-primary.active {
     background: #007299;
     box-shadow: none;

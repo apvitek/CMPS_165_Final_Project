@@ -248,12 +248,15 @@
             document.getElementById("tooltip").style.pointerEvents = "auto";
 
             mouseout(d);
+            svg.selectAll("g.node").style("opacity", 0.1);
+            svg.selectAll("g.node").on("mouseover", null);
             animationEnabled = false;
         }
 
         function mouseclickontooltip(d) {
             tooltip.transition().duration(1000).style("opacity", 0);
             document.getElementById("tooltip").style.pointerEvents = "none";
+            svg.selectAll("g.node").style("opacity", 1);
             animationEnabled = true;
         }
 
