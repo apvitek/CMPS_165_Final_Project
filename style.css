@@ -243,10 +243,13 @@ h5 {
 .columns {
     font: 300 15px "Helvetica Neue";
     background-color: whitesmoke;
-    width: 200px;
-    -webkit-columns: 100px 1; /* Chrome, Safari, Opera */
-    -moz-columns: 100px 1; /* Firefox */
-    columns: 100px 1;
+    position: absolute;
+    height: 120px;
+    -webkit-columns: 300px 1; /* Chrome, Safari, Opera */
+    -moz-columns: 300px 1; /* Firefox */
+    columns: 300px 1;
+    padding: 10px;
+    left: 0px;
 }
 
 .invert {
