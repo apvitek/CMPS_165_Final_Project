@@ -4,7 +4,7 @@ path.arc {
 }
 
 .node {
-    transition: 0.7s;
+    transition: 0.5s;
     font: 300 10px "Helvetica Neue";
 }
 
@@ -21,12 +21,8 @@ td {
     font-size: 10px;
 }
 
-.node:hover {
-    fill: #1f77b4;
-}
-
 .link {
-    transition: 0.7s;
+    transition: 0.5s;
     fill: none;
     stroke: #1f77b4;
     stroke-opacity: .4;
@@ -35,18 +31,18 @@ td {
 
 .link.source,
 .link.target {
-    transition: 0.7s;
+    transition: 0.5s;
     stroke-opacity: 0.4 !important;
     stroke-width: 2px;
 }
 
 .link.free {
-    transition: 0.7s;
+    transition: 0.5s;
     stroke-opacity: 0.1;
 }
 
 .node.target {
-    transition: 0.7s;
+    transition: 0.5s;
     fill: #d62728 !important;
     opacity: 1 !important;
 }
@@ -56,18 +52,18 @@ td {
 }
 
 .node.source {
-    transition: 0.7s;
+    transition: 0.5s;
     fill: #2ca02c;
     opacity: 1 !important;
 }
 
 .node.free {
-    transition: 0.7s;
+    transition: 0.5s;
     opacity: 0.1;
 }
 
 .link.target {
-    transition: 0.7s;
+    transition: 0.5s;
     stroke: #2ca02c;
 }
 
@@ -276,6 +272,7 @@ body {
     cursor: pointer;
     font-size: 14px;
     opacity: 1;
+    fill: #1f77b4;
 }
 
 body>svg {
