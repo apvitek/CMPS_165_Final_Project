@@ -1,14 +1,10 @@
-:root {
-  --trans: 0.7s;
-}
-
 path.arc {
     cursor: move;
     fill: transparent;
 }
 
 .node {
-    transition: var(--trans);
+    transition: 0.7s;
     font: 300 10px "Helvetica Neue";
 }
 
@@ -30,7 +26,7 @@ td {
 }
 
 .link {
-    transition: var(--trans);
+    transition: 0.7s;
     fill: none;
     stroke: #1f77b4;
     stroke-opacity: .4;
@@ -39,18 +35,18 @@ td {
 
 .link.source,
 .link.target {
-    transition: var(--trans);
+    transition: 0.7s;
     stroke-opacity: 0.4 !important;
     stroke-width: 2px;
 }
 
 .link.free {
-    transition: var(--trans);
+    transition: 0.7s;
     stroke-opacity: 0.1;
 }
 
 .node.target {
-    transition: var(--trans);
+    transition: 0.7s;
     fill: #d62728 !important;
     opacity: 1 !important;
 }
@@ -60,18 +56,18 @@ td {
 }
 
 .node.source {
-    transition: var(--trans);
+    transition: 0.7s;
     fill: #2ca02c;
     opacity: 1 !important;
 }
 
 .node.free {
-    transition: var(--trans);
+    transition: 0.7s;
     opacity: 0.1;
 }
 
 .link.target {
-    transition: var(--trans);
+    transition: 0.7s;
     stroke: #2ca02c;
 }
 
