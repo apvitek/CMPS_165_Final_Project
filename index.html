@@ -196,7 +196,7 @@
         }
 
         function mousemove() {
-            if (m0 && animationEnabled) {
+            if (m0) {
                 var m1 = mouse(d3.event),
                     dm = Math.atan2(cross(m0, m1), dot(m0, m1)) * 180 / Math.PI;
                 div.style("-webkit-transform", "translateY(" + (ry - rx) + "px)rotateZ(" + dm + "deg)translateY(" + (rx - ry) + "px)");
@@ -204,7 +204,7 @@
         }
 
         function mouseup() {
-            if (m0 && animationEnabled) {
+            if (m0) {
                 var m1 = mouse(d3.event),
                     dm = Math.atan2(cross(m0, m1), dot(m0, m1)) * 180 / Math.PI;
                 rotate += dm;
@@ -249,7 +249,7 @@
 
             mouseout(d);
             svg.selectAll("g.node").style("opacity", 0.1);
-            svg.selectAll("g.node").on("mouseover", null);
+            svg.selectAll("g.node").style("pointer-events", "none");
             animationEnabled = false;
         }
 
@@ -257,6 +257,7 @@
             tooltip.transition().duration(1000).style("opacity", 0);
             document.getElementById("tooltip").style.pointerEvents = "none";
             svg.selectAll("g.node").style("opacity", 1);
+            svg.selectAll("g.node").style("pointer-events", "auto");
             animationEnabled = true;
         }
 
