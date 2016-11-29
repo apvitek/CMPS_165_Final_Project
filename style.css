@@ -230,6 +230,25 @@ h4 {
     font: 300 15px "Helvetica Neue";
 }
 
+h5 {
+    font: 300 15px "Helvetica Neue";
+    position: absolute;
+    bottom: -410px;
+    background-color: whitesmoke;
+    width: 900px;
+    height: 100px;
+    padding: 10px;
+}
+
+.columns {
+    font: 300 15px "Helvetica Neue";
+    background-color: whitesmoke;
+    width: 200px;
+    -webkit-columns: 100px 1; /* Chrome, Safari, Opera */
+    -moz-columns: 100px 1; /* Firefox */
+    columns: 100px 1;
+}
+
 .invert {
     background: #1f1f1f;
     color: #dcdccc;
