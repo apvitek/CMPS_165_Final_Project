@@ -1,10 +1,15 @@
+:root {
+  --trans: 0.7s;
+}
+
 path.arc {
     cursor: move;
     fill: transparent;
 }
 
 .node {
-    font: 300 10px "Helvetica Neue"
+    transition: var(--trans);
+    font: 300 10px "Helvetica Neue";
 }
 
 table {
@@ -25,6 +30,7 @@ td {
 }
 
 .link {
+    transition: var(--trans);
     fill: none;
     stroke: #1f77b4;
     stroke-opacity: .4;
@@ -33,12 +39,20 @@ td {
 
 .link.source,
 .link.target {
-    stroke-opacity: 1;
+    transition: var(--trans);
+    stroke-opacity: 0.4 !important;
     stroke-width: 2px;
 }
 
+.link.free {
+    transition: var(--trans);
+    stroke-opacity: 0.1;
+}
+
 .node.target {
+    transition: var(--trans);
     fill: #d62728 !important;
+    opacity: 1 !important;
 }
 
 .link.source {
@@ -46,10 +60,18 @@ td {
 }
 
 .node.source {
+    transition: var(--trans);
     fill: #2ca02c;
+    opacity: 1 !important;
+}
+
+.node.free {
+    transition: var(--trans);
+    opacity: 0.1;
 }
 
 .link.target {
+    transition: var(--trans);
     stroke: #2ca02c;
 }
 
@@ -250,15 +272,14 @@ h4 {
     color: #1181B8;
 }
 
-body
-{
+body {
     overflow-y: scroll;
 }
 
-.node:hover
-{
+.node:hover {
     cursor: pointer;
-    font-size: 14px;s
+    font-size: 14px;
+    opacity: 1;
 }
 
 body>svg {
