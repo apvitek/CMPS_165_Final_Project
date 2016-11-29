@@ -165,7 +165,7 @@
             }).angle(function(d) {
                 return d.x / 180 * Math.PI;
             });
-            var div = d3.select("body").insert("div", "h2").style("top", "-40px").style("left", "-160px").style("width", w + "px").style("height", w + "px").style("position", "absolute").style("-webkit-backface-visibility", "hidden");
+            var div = d3.select("body").insert("div", "h2").style("top", "-65px").style("left", "-160px").style("width", w + "px").style("height", w + "px").style("position", "absolute").style("-webkit-backface-visibility", "hidden");
             var color = d3.scale.ordinal().range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00", "#1ec4dc", "#42444e", "#da4264"]);
             var arc = d3.svg.arc().outerRadius(radius - 100).innerRadius(radius - 90);
             var pie = d3.layout.pie().sort(null).value(function(d) {
