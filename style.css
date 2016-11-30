@@ -6,11 +6,13 @@ path.arc {
 .node {
     transition: 0.5s;
     font: 300 10px "Helvetica Neue";
+	fill: white;
 }
 
 table {
     margin-top: 90px;
-    font: 300 30px "Helvetica Neue"
+    font: 300 30px "Helvetica Neue";
+	color: white;
 }
 
 table,
@@ -165,6 +167,8 @@ body {
     overflow: hidden;
     position: relative;
     width: 960px;
+	color: white;
+	background-color: black;
 }
 
 a:link,
@@ -198,7 +202,9 @@ body>ul {
 }
 
 h1 {
-    font: 500 30px "Helvetica Neue" bold;
+    font: 500 30px;
+	font-family: 'Bungee Outline';
+	font-weight: bold;
     text-align: center;
     margin: 5px;
 }
@@ -239,6 +245,7 @@ h5 {
     width: 900px;
     height: 100px;
     padding: 10px;
+	color: black;
 }
 
 .columns {
@@ -294,7 +301,7 @@ body {
     cursor: pointer;
     font-size: 14px;
     opacity: 1;
-    fill: #1f77b4;
+    fill: white;
 }
 
 body>svg {
