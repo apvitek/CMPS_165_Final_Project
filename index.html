@@ -7,114 +7,112 @@
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
 	
 	<!-- One-page website files -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link href = "jquery.fullPage.css" rel="stylesheet" type="text/css">
     <script src="jquery.easings.min.js"></script>
     <script src="jquery.fullPage.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <body>
-	<div id="fullpage">
-		<div class="section">
-			<h1>
-				Electronic Music Genres
-			</h1>
-			<p1> Despite popular belief, electronic music has a rich universe of sub-genres interrelated with each other. The flare circle chart shows this structural complexity. Clicking on a sub-genre reveals miscellaneous information about it and a Spotify player for a sample taste. </p1>
+		<h1>
+			Electronic Music Genres
+		</h1>
+		<p1> Despite popular belief, electronic music has a rich universe of sub-genres interrelated with each other. The flare circle chart shows this structural complexity. Clicking on a sub-genre reveals miscellaneous information about it and a Spotify player for a sample taste. </p1>
 
-			<table id="myTable">
-				<tr>
-					<td id="color"> </td>
-					<td id="genre">Breaks</td>
-				</tr>
-				<tr>
-					<td id="color"> </td>
-					<td id="genre">Disco</td>
-				</tr>
-				<tr>
-					<td id="color"> </td>
-					<td id="genre">Downtempo</td>
-				</tr>
-				<tr>
-					<td id="color"> </td>
-					<td id="genre">Garage</td>
-				</tr>
-				<tr>
-					<td id="color"> </td>
-					<td id="genre">Hardcore</td>
-				</tr>
-				<tr>
-					<td id="color"> </td>
-					<td id="genre">HipHop</td>
-				</tr>
-				<tr>
-					<td id="color"> </td>
-					<td id="genre">House</td>
-				</tr>
-				<tr>
-					<td id="color"> </td>
-					<td id="genre">Industrial</td>
-				</tr>
-				<tr>
-					<td id="color"> </td>
-					<td id="genre">Techno</td>
-				</tr>
-				<tr>
-					<td id="color"> </td>
-					<td id="genre">Trance</td>
-				</tr>
-				<tr>
-				</tr>
-				<tr>
-					<td id="color" style="font-size:20px;position:relative;top:-6px;left:-3px;color:#d62728;">〜</td>
-					<td id="genre">Influenced</td>
-				</tr>
-				<tr>
-					<td id="color" style="font-size:20px;position:relative;top:-6px;left:-3px;color:#2ca02c;">〜</td>
-					<td id="genre">Influenced by</td>
-				</tr>
-			</table>
-			<h2></h2>
-			<h4>
-				<div style="position:absolute;bottom:-220px;"><b>Settings</b>
+		<table id="myTable">
+			<tr>
+				<td id="color"> </td>
+				<td id="genre">Breaks</td>
+			</tr>
+			<tr>
+				<td id="color"> </td>
+				<td id="genre">Disco</td>
+			</tr>
+			<tr>
+				<td id="color"> </td>
+				<td id="genre">Downtempo</td>
+			</tr>
+			<tr>
+				<td id="color"> </td>
+				<td id="genre">Garage</td>
+			</tr>
+			<tr>
+				<td id="color"> </td>
+				<td id="genre">Hardcore</td>
+			</tr>
+			<tr>
+				<td id="color"> </td>
+				<td id="genre">HipHop</td>
+			</tr>
+			<tr>
+				<td id="color"> </td>
+				<td id="genre">House</td>
+			</tr>
+			<tr>
+				<td id="color"> </td>
+				<td id="genre">Industrial</td>
+			</tr>
+			<tr>
+				<td id="color"> </td>
+				<td id="genre">Techno</td>
+			</tr>
+			<tr>
+				<td id="color"> </td>
+				<td id="genre">Trance</td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<td id="color" style="font-size:20px;position:relative;top:-6px;left:-3px;color:#d62728;">〜</td>
+				<td id="genre">Influenced</td>
+			</tr>
+			<tr>
+				<td id="color" style="font-size:20px;position:relative;top:-6px;left:-3px;color:#2ca02c;">〜</td>
+				<td id="genre">Influenced by</td>
+			</tr>
+		</table>
+		<h2></h2>
+		<h4>
+			<div style="position:absolute;bottom:-220px;"><b>Settings</b>
 
-					<div style="position:relative;bottom:-6px;">Tension:
-						<input style="position:relative;top:3px;" type="range" min="0" max="100" value="85"> </div>
+				<div style="position:relative;bottom:-6px;">Tension:
+					<input style="position:relative;top:3px;" type="range" min="0" max="100" value="85"> </div>
 
-					<div style="position:relative;bottom:-20px;">Stroke:
-						<input style="position:relative;top:3px;" type="button" onclick="increaseStroke()" class="btn btn-primary btn-lg raised" value="Bolder">
-						<input style="position:relative;top:3px;" type="button" onclick="decreaseStroke()" class="btn btn-primary btn-lg raised" value="Thinner"> </div>
-				</div>
-			</h4>
-
-			<div style="background-color:grey;">
-				<h5>
-					<b>Mounted from GitHub</b><br><br>
-					<b>Created by:</b><br>Arseniy Khmelizde, Andrea Vitek, and Eyad Murshid in collaboration with Suresh K Lodha<br><br>
-					<div class="columns">
-						<b>Files Submitted:</b>
-						<ul>
-							<li>index.html</li>
-							<li>style.css</li>
-							<li>data.csv</li>
-							<li>flare-imports.json</li>
-						</ul>
-					</div>
-					<div class="columns" style="margin-left: 300px">
-						<b>Data Sources:</b>
-						<ul>
-							<li><a href="http://img4.wikia.nocookie.net/__cb20130207123759/4chanmusic/images/7/76/Electronic_Music_Guide.jpg">Let's talk music</a></li>
-
-							<li><a href="http://techno.org/electronic-music-guide/">Electronic Music Guide</a></li>
-						</ul>
-					</div>
-					<div class="columns" style="margin-left: 600px">
-						<b>Code Sources:</b>
-						<ul>
-							<li><a href="http://bl.ocks.org/mbostock/7607999">Hierarchical Edge Bundling</a></li>
-							<li><a href="http://chimera.labs.oreilly.com/books/1230000000345/ch11.html#_pie_layout">Pie layout</a></li>
-						</ul>
-					</div>
-				</h5>
+				<div style="position:relative;bottom:-20px;">Stroke:
+					<input style="position:relative;top:3px;" type="button" onclick="increaseStroke()" class="btn btn-primary btn-lg raised" value="Bolder">
+					<input style="position:relative;top:3px;" type="button" onclick="decreaseStroke()" class="btn btn-primary btn-lg raised" value="Thinner"> </div>
 			</div>
+		</h4>
+
+		<div style="background-color:grey;">
+			<h5>
+				<b>Mounted from GitHub</b><br><br>
+				<b>Created by:</b><br>Arseniy Khmelizde, Andrea Vitek, and Eyad Murshid in collaboration with Suresh K Lodha<br><br>
+				<div class="columns">
+					<b>Files Submitted:</b>
+					<ul>
+						<li>index.html</li>
+						<li>style.css</li>
+						<li>data.csv</li>
+						<li>flare-imports.json</li>
+					</ul>
+				</div>
+				<div class="columns" style="margin-left: 300px">
+					<b>Data Sources:</b>
+					<ul>
+						<li><a href="http://img4.wikia.nocookie.net/__cb20130207123759/4chanmusic/images/7/76/Electronic_Music_Guide.jpg">Let's talk music</a></li>
+
+						<li><a href="http://techno.org/electronic-music-guide/">Electronic Music Guide</a></li>
+					</ul>
+				</div>
+				<div class="columns" style="margin-left: 600px">
+					<b>Code Sources:</b>
+					<ul>
+						<li><a href="http://bl.ocks.org/mbostock/7607999">Hierarchical Edge Bundling</a></li>
+						<li><a href="http://chimera.labs.oreilly.com/books/1230000000345/ch11.html#_pie_layout">Pie layout</a></li>
+					</ul>
+				</div>
+			</h5>
+		</div>
 
 
 			<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
@@ -359,7 +357,6 @@
 					}
 				}
 			</script>
-		</div>
 </body>
 
 </html>
