@@ -7,16 +7,21 @@
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
 	
 	<!-- One-page website files -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!--	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+<!--
 	<link href = "jquery.fullPage.css" rel="stylesheet" type="text/css">
     <script src="jquery.easings.min.js"></script>
     <script src="jquery.fullPage.min.js"></script>
+-->
 
 <body>
 		<h1>
 			Electronic Music Genres
 		</h1>
-		<p1> Despite popular belief, electronic music has a rich universe of sub-genres interrelated with each other. The flare circle chart shows this structural complexity. Clicking on a sub-genre reveals miscellaneous information about it and a Spotify player for a sample taste. </p1>
+	
+		<p1> 
+			Despite popular belief, electronic music has a rich universe of sub-genres interrelated with each other. The flare circle chart shows this structural complexity. Clicking on a sub-genre reveals miscellaneous information about it and a Spotify player for a sample taste. 
+		</p1>
 
 		<table id="myTable">
 			<tr>
@@ -94,6 +99,9 @@
 						<li>style.css</li>
 						<li>data.csv</li>
 						<li>flare-imports.json</li>
+						<li>jquery.easings.min.js</li>
+						<li>jquery.fullPage.min.js</li>
+						<li>jquery.fullpage.min.js.map</li>
 					</ul>
 				</div>
 				<div class="columns" style="margin-left: 300px">
@@ -165,6 +173,7 @@
 					};
 				})();
 			</script>
+	
 			<script type="text/javascript">
 				var animationEnabled = true;
 				var w = 1280,
@@ -186,7 +195,7 @@
 				});
 				var div = d3.select("body").insert("div", "h2").style("top", "-40px").style("left", "-160px").style("width", w + "px").style("height", w + "px").style("position", "absolute").style("-webkit-backface-visibility", "hidden");
 				var color = d3.scale.ordinal().range(["#1ec4dc", "#551a8b", "#7b6888", "#66CD00", "#CD00CD", "#CD2626", "#FFFFFF", "#ffff00", "#65cca9", "#ff8c00"]);
-				var arc = d3.svg.arc().outerRadius(radius - 100).innerRadius(radius - 90);
+				var arc = d3.svg.arc().outerRadius(radius - 95).innerRadius(radius - 85);
 				var pie = d3.layout.pie().sort(null).value(function(d) {
 					return d.numberOfSubs;
 				});

@@ -252,7 +252,7 @@ h5 {
     font: 300 15px "Helvetica Neue";
     background-color: whitesmoke;
     position: absolute;
-    height: 120px;
+    height: 160px;
     -webkit-columns: 300px 1; /* Chrome, Safari, Opera */
     -moz-columns: 300px 1; /* Firefox */
     columns: 300px 1;
@@ -313,13 +313,14 @@ body>svg {
 div.tooltip {
     position: absolute;
     text-align: center;
-    top: 212px;
-    left: 199px;
-    width: 558px;
-    height: 558px;
+	color: black;
+    top: 210px;
+    left: 196px;
+    width: 564px;
+    height: 564px;
     padding: 2px;
     font: 15px "Helvetica Neue";
     background: white;
     border: 0px;
-    border-radius: 279px;
+    border-radius: 300px;
 }
