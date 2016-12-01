@@ -6,13 +6,13 @@ path.arc {
 .node {
     transition: 0.5s;
     font: 300 10px "Helvetica Neue";
-	fill: white;
+	fill: black;
 }
 
 table {
     margin-top: 90px;
     font: 300 30px "Helvetica Neue";
-	color: white;
+	color: black;
 }
 
 table,
@@ -167,13 +167,13 @@ body {
     overflow: hidden;
     position: relative;
     width: 960px;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: white;
 }
 
 a:link,
 a:visited {
-    color: lightblue;
+    color: lightcoral;
     text-decoration: none;
 }
 
@@ -241,16 +241,16 @@ h5 {
     font: 300 15px "Helvetica Neue";
     position: absolute;
     bottom: -410px;
-    background-color: black;
+    background-color: white;
     width: 900px;
     height: 100px;
     padding: 10px;
-	color: white;
+	color: black;
 }
 
 .columns {
     font: 300 15px "Helvetica Neue";
-    background-color: black;
+    background-color: white;
     position: absolute;
     height: 160px;
     -webkit-columns: 300px 1; /* Chrome, Safari, Opera */
@@ -301,7 +301,7 @@ body {
     cursor: pointer;
     font-size: 14px;
     opacity: 1;
-    fill: white;
+    fill: black;
 }
 
 body>svg {
