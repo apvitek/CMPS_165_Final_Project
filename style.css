@@ -173,7 +173,7 @@ body {
 
 a:link,
 a:visited {
-    color: #777;
+    color: lightblue;
     text-decoration: none;
 }
 
@@ -241,16 +241,16 @@ h5 {
     font: 300 15px "Helvetica Neue";
     position: absolute;
     bottom: -410px;
-    background-color: whitesmoke;
+    background-color: black;
     width: 900px;
     height: 100px;
     padding: 10px;
-	color: black;
+	color: white;
 }
 
 .columns {
     font: 300 15px "Helvetica Neue";
-    background-color: whitesmoke;
+    background-color: black;
     position: absolute;
     height: 160px;
     -webkit-columns: 300px 1; /* Chrome, Safari, Opera */
