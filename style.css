@@ -24,7 +24,7 @@ td {
 .link {
     transition: 0.5s;
     fill: none;
-    stroke: #1f77b4;
+    stroke: #26B5FF;
     stroke-opacity: 0.4;
     pointer-events: none;
 }
@@ -34,6 +34,16 @@ td {
     transition: 0.5s;
     stroke-opacity: 0.6 !important;
     stroke-width: 2px;
+}
+
+.link.source {
+    stroke: #d62728;
+}
+
+
+.link.target {
+    transition: 0.5s;
+    stroke: #2ca02c;
 }
 
 .link.free {
@@ -47,10 +57,6 @@ td {
     opacity: 1 !important;
 }
 
-.link.source {
-    stroke: #d62728;
-}
-
 
 .node.source {
     transition: 0.5s;
@@ -61,11 +67,6 @@ td {
 .node.free {
     transition: 0.5s;
     opacity: 0.1;
-}
-
-.link.target {
-    transition: 0.5s;
-    stroke: #2ca02c;
 }
 
 #genre {
@@ -240,7 +241,7 @@ h5 {
     font: 300 15px "Helvetica Neue";
     position: absolute;
     bottom: -410px;
-    background-color: white;
+    background-color: gainsboro;
     width: 900px;
     height: 100px;
     padding: 10px;
@@ -249,7 +250,7 @@ h5 {
 
 .columns {
     font: 300 15px "Helvetica Neue";
-    background-color: white;
+    background-color: gainsboro;
     position: absolute;
     height: 160px;
     -webkit-columns: 300px 1; /* Chrome, Safari, Opera */

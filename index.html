@@ -61,6 +61,7 @@
 			<td id="genre">Trance</td>
 		</tr>
 		<tr>
+                    <td style="font-sizr:5px;">  </td>
 		</tr>
 		<tr>
 			<td id="color" style="font-size:20px;position:relative;top:-6px;left:-3px;color:#d62728;">〜</td>
@@ -135,7 +136,7 @@
 				  
 			   // Body
 			   $('body').css({
-				 'backgroundColor' : "black",
+				 'backgroundColor' : "rgba(33,33,33,1)",
 				 'color' : "white",
 				 'transition': "1s"  
 			   }); 
@@ -212,22 +213,22 @@
 			   // Credits
 			   $('#credits').css({
 				 'color' : "black",
-				 'backgroundColor' : "white",  
+				 'backgroundColor' : "gainsboro",  
 				 'transition': "1s"
 			   });
 			   $('#column_1').css({
 				 'color' : "black",
-				 'backgroundColor' : "white",
+				 'backgroundColor' : "gainsboro",
 				 'transition': "1s"
 			   });
 			   $('#column_2').css({
 				 'color' : "black",
-				 'backgroundColor' : "white",
+				 'backgroundColor' : "gainsboro",
 				 'transition': "1s"
 			   });
 			   $('#column_3').css({
 				 'color' : "black",
-				 'backgroundColor' : "white",  
+				 'backgroundColor' : "gainsboro",  
 				 'transition': "1s"
 			   });	  
 			  }
@@ -308,7 +309,7 @@
 				return d.x / 180 * Math.PI;
 			});
 			var div = d3.select("body").insert("div", "h2").style("top", "-40px").style("left", "-160px").style("width", w + "px").style("height", w + "px").style("position", "absolute").style("-webkit-backface-visibility", "hidden");
-			var color = d3.scale.ordinal().range(["#1ec4dc", "#551a8b", "#7b6888", "#66CD00", "#CD00CD", "#CD2626", "#ccac00", "#ffff00", "#65cca9", "#ff8c00"]);
+			var color = d3.scale.ordinal().range(["#1ec4dc", "#551a8b", "#7b6888", "#66CD00", "#CD00CD", "#973632", "#b7bed0", "#f1bc30", "#65cca9", "#ed4845"]);
 			var arc = d3.svg.arc().outerRadius(radius - 95).innerRadius(radius - 85);
 			var pie = d3.layout.pie().sort(null).value(function(d) {
 				return d.numberOfSubs;
