@@ -16,7 +16,7 @@
 	</h1>
 
 	<p1> 
-		Despite popular belief, electronic music has a rich universe of sub-genres interrelated with each other. The flare circle chart shows this structural complexity. Clicking on a sub-genre reveals miscellaneous information about it and a Spotify player for a sample taste. 
+		Today electronic music is prevailing in our society, but not many people recognize the variety of genres that they listen to daily. It has a rich universe of sub-genres interrelated with each other. And this could be easily traced based on the complexity of the flare circle. 
 	</p1>
 
 	<table id="myTable">
@@ -97,7 +97,7 @@
 		<h5 id="credits">
 			<b>Mounted from GitHub</b><br><br>
 			<b>Created by:</b><br>Arseniy Khmelizde, Andrea Vitek, and Eyad Murshid in collaboration with Suresh K Lodha<br><br>
-			<div class="columns" id="columns_1">
+			<div class="columns" id="column_1">
 				<b>Files Submitted:</b>
 				<ul>
 					<li>index.html</li>
@@ -106,7 +106,7 @@
 					<li>flare-imports.json</li>
 				</ul>
 			</div>
-			<div class="columns" id="columns_2" style="margin-left: 300px">
+			<div class="columns" id="column_2" style="margin-left: 300px">
 				<b>Data Sources:</b>
 				<ul>
 					<li><a href="http://img4.wikia.nocookie.net/__cb20130207123759/4chanmusic/images/7/76/Electronic_Music_Guide.jpg">Let's talk music</a></li>
@@ -114,7 +114,7 @@
 					<li><a href="http://techno.org/electronic-music-guide/">Electronic Music Guide</a></li>
 				</ul>
 			</div>
-			<div class="columns" id="columns_3" style="margin-left: 600px">
+			<div class="columns" id="column_3" style="margin-left: 600px">
 				<b>Code Sources:</b>
 				<ul>
 					<li><a href="http://bl.ocks.org/mbostock/7607999">Hierarchical Edge Bundling</a></li>
@@ -126,6 +126,7 @@
 	
 	
 		<script>
+			// Color Invert
 			function toggle(button)
 			{
 			  if(document.getElementById("changeColor").value=="OFF")
@@ -133,52 +134,102 @@
 			   document.getElementById("changeColor").value="ON";
 				  
 			   // Body
-			   document.body.style.backgroundColor = "black";
-			   document.body.style.color = "white";
+			   $('body').css({
+				 'backgroundColor' : "black",
+				 'color' : "white",
+				 'transition': "1s"  
+			   }); 
 				  
 			   // Legend
-			   document.getElementById("myTable").style.color = "white";
+			   $('#myTable').css({
+				 'color' : "white",
+				 'transition': "1s"
+			   });
 				  
 			   // Circle
-				  $('.node').css({
-        		  	'fill' : "white"
-    			  });
+			   $('.node').css({
+				 'fill' : "white"
+			   });
 				  
 			   //Tension
-			   document.getElementById("tension_scroller").style.fill = "white";
+			   $('#tension_scroller').css({
+				 'fill' : "white",
+				 'transition': "1s"
+			   });
 				  
 			   // Credits
-			   document.getElementById("credits").style.color = "white";
-			   document.getElementById("credits").style.backgroundColor = "black";
-			   document.getElementById("columns_1", "columns_2", "columns_3").style.color = "white";
-			   document.getElementById("columns_1").style.backgroundColor = "black";
-		       document.getElementById("columns_2").style.backgroundColor = "black";
-			   document.getElementById("columns_3").style.backgroundColor = "black";
+			   $('#credits').css({
+				 'color' : "white",
+				 'backgroundColor' : "black",  
+				 'transition': "1s"
+			   });
+			   $('#column_1').css({
+				 'color' : "white",
+				 'backgroundColor' : "black",
+				 'transition': "1s"
+			   });
+			   $('#column_2').css({
+				 'color' : "white",
+				 'backgroundColor' : "black",
+				 'transition': "1s"
+			   });
+			   $('#column_3').css({
+				 'color' : "white",
+				 'backgroundColor' : "black",  
+				 'transition': "1s"
+			   });	  
 			  }
 
 				
 			  else if(document.getElementById("changeColor").value=="ON")
 			  {
 			   document.getElementById("changeColor").value="OFF";
-			   // Body	  
-			   document.body.style.backgroundColor = "white";
-			   document.body.style.color = "black";
+				  
+			   // Body
+			   $('body').css({
+				 'backgroundColor' : "white",
+				 'color' : "black",
+				 'transition': "1s"  
+			   }); 
 				  
 			   // Legend
-			   document.getElementById("myTable").style.color = "black";
+			   $('#myTable').css({
+				 'color' : "black",
+				 'transition': "1s"
+			   });
 				  
 			   // Circle
 			   $('.node').css({
-			   	  'fill' : "black"
+				 'fill' : "black"
+			   });
+				  
+			   //Tension
+			   $('#tension_scroller').css({
+				 'fill' : "black",
+				 'transition': "1s"
 			   });
 				  
 			   // Credits
-			   document.getElementById("credits").style.color = "black";
-			   document.getElementById("credits").style.backgroundColor = "white";
-			   document.getElementById("columns_1", "columns_2", "columns_3").style.color = "black";
-			   document.getElementById("columns_1").style.backgroundColor = "white";
-		       document.getElementById("columns_2").style.backgroundColor = "white";
-			   document.getElementById("columns_3").style.backgroundColor = "white";
+			   $('#credits').css({
+				 'color' : "black",
+				 'backgroundColor' : "white",  
+				 'transition': "1s"
+			   });
+			   $('#column_1').css({
+				 'color' : "black",
+				 'backgroundColor' : "white",
+				 'transition': "1s"
+			   });
+			   $('#column_2').css({
+				 'color' : "black",
+				 'backgroundColor' : "white",
+				 'transition': "1s"
+			   });
+			   $('#column_3').css({
+				 'color' : "black",
+				 'backgroundColor' : "white",  
+				 'transition': "1s"
+			   });	  
 			  }
 			}
 		</script>
@@ -186,6 +237,7 @@
 	
 	
 		<script>
+			// Nodes
 			(function() {
 				packages = {
 					// Lazily construct the package hierarchy from class names.
@@ -236,6 +288,7 @@
 		</script>
 
 		<script type="text/javascript">
+			// Main Visualization
 			var animationEnabled = true;
 			var w = 1280,
 				h = 800,
