@@ -76,7 +76,7 @@
 		<div style="position:absolute;bottom:-220px;"><b>Settings</b>
 
 			<div style="position:relative;bottom:-6px;">Tension:
-				<input style="position:relative;top:3px;" type="range" min="0" max="100" value="85"> 
+				<input style="position:relative;top:3px;" id="tension_scroller" type="range" min="0" max="100" value="85"> 
 			</div>
 
 			<div style="position:relative;bottom:-20px;">Stroke:
@@ -145,6 +145,9 @@
 				  $('.node').css({
         		  	'fill' : "white"
     			  });
+				  
+			   //Tension
+			   document.getElementById("tension_scroller").style.color = "white";
 				  
 			   // Credits
 			   document.getElementById("credits").style.color = "white";
