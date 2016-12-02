@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
 </head>
 
 <body>
@@ -84,7 +85,12 @@
 			</div>
 			
 			<div style="position:relative;bottom:-35px;">Change Color:
-				<input style="position:relative;top:3px;" type="button" onclick="changeColor(); return false;" class="btn btn-primary btn-lg raised" value="Click Me">
+<!--				<input style="position:relative;top:3px;" type="button" onclick="changeColor(); return false;" class="btn btn-primary btn-lg raised" value="Click Me">-->
+				<label class="switch">
+<!--				  <input type="checkbox" onclick="changeColor();">-->
+				  <input type="checkbox" id="changeColor" value="OFF" onclick="toggle(this);">
+				  <div class="slider round"></div>
+				</label>
 			</div>
 		</div>
 	</h4>
@@ -118,35 +124,62 @@
 				</ul>
 			</div>
 		</h5>
-	</div>
-
-
-		<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
-	
+	</div>	
 	
 	
 		<script>
-			function changeColor() 
+			function toggle(button)
 			{
-				// Body
-				document.body.style.backgroundColor = "black";
-				document.body.style.color = "white";
+			  if(document.getElementById("changeColor").value=="OFF")
+			  {
+			   document.getElementById("changeColor").value="ON";
+				  
+			   // Body
+			   document.body.style.backgroundColor = "black";
+			   document.body.style.color = "white";
+				  
+			   // Legend
+			   document.getElementById("myTable").style.color = "white";
+				  
+			   // Circle
+				  $('.node').css({
+        		  	'fill' : "white"
+    			  });
+				  
+			   // Credits
+			   document.getElementById("credits").style.color = "white";
+			   document.getElementById("credits").style.backgroundColor = "black";
+			   document.getElementById("columns_1", "columns_2", "columns_3").style.color = "white";
+			   document.getElementById("columns_1").style.backgroundColor = "black";
+		       document.getElementById("columns_2").style.backgroundColor = "black";
+			   document.getElementById("columns_3").style.backgroundColor = "black";
+			  }
+
 				
-				// Legend
-				document.getElementById("myTable").style.color = "white";
-				
-				// SVG
-				
-				
-				// Credits
-				document.getElementById("credits").style.color = "white";
-				document.getElementById("credits").style.backgroundColor = "black";
-				document.getElementById("columns_1", "columns_2", "columns_3").style.color = "white";
-				document.getElementById("columns_1").style.backgroundColor = "black";
-				document.getElementById("columns_2").style.backgroundColor = "black";
-				document.getElementById("columns_3").style.backgroundColor = "black";
-				return false;
-			} 
+			  else if(document.getElementById("changeColor").value=="ON")
+			  {
+			   document.getElementById("changeColor").value="OFF";
+			   // Body	  
+			   document.body.style.backgroundColor = "white";
+			   document.body.style.color = "black";
+				  
+			   // Legend
+			   document.getElementById("myTable").style.color = "black";
+				  
+			   // Circle
+			   $('.node').css({
+			   	  'fill' : "black"
+			   });
+				  
+			   // Credits
+			   document.getElementById("credits").style.color = "black";
+			   document.getElementById("credits").style.backgroundColor = "white";
+			   document.getElementById("columns_1", "columns_2", "columns_3").style.color = "black";
+			   document.getElementById("columns_1").style.backgroundColor = "white";
+		       document.getElementById("columns_2").style.backgroundColor = "white";
+			   document.getElementById("columns_3").style.backgroundColor = "white";
+			  }
+			}
 		</script>
 	
 	
