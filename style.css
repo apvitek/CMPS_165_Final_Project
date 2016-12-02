@@ -11,7 +11,7 @@ path.arc {
 table {
     margin-top: 90px;
     font: 300 30px "Helvetica Neue";
-	color: black;
+    color: black;
 }
 
 table,
@@ -40,7 +40,6 @@ td {
     stroke: #d62728;
 }
 
-
 .link.target {
     transition: 0.5s;
     stroke: #2ca02c;
@@ -56,7 +55,6 @@ td {
     fill: #d62728 !important;
     opacity: 1 !important;
 }
-
 
 .node.source {
     transition: 0.5s;
@@ -167,8 +165,8 @@ body {
     overflow: hidden;
     position: relative;
     width: 960px;
-	color: black;
-	background-color: white;
+    color: black;
+    background-color: white;
 }
 
 a:link,
@@ -203,8 +201,8 @@ body>ul {
 
 h1 {
     font: 500 30px;
-	font-family: 'Bungee Outline';
-	font-weight: bold;
+    font-family: 'Bungee Outline';
+    font-weight: bold;
     text-align: center;
     margin: 5px;
 }
@@ -245,7 +243,7 @@ h5 {
     width: 900px;
     height: 100px;
     padding: 10px;
-	color: black;
+    color: black;
 }
 
 .columns {
@@ -253,8 +251,10 @@ h5 {
     background-color: gainsboro;
     position: absolute;
     height: 160px;
-    -webkit-columns: 300px 1; /* Chrome, Safari, Opera */
-    -moz-columns: 300px 1; /* Firefox */
+    -webkit-columns: 300px 1;
+    /* Chrome, Safari, Opera */
+    -moz-columns: 300px 1;
+    /* Firefox */
     columns: 300px 1;
     padding: 10px;
     left: 0px;
@@ -313,106 +313,100 @@ body>svg {
 div.tooltip {
     position: absolute;
     text-align: center;
-	color: black;
+    color: black;
     top: 210px;
     left: 196px;
     width: 564px;
     height: 564px;
     padding: 2px;
-    font: 15px "Helvetica Neue";
+    font: 300 15px "Helvetica Neue";
     background: white;
     border: 0px;
     border-radius: 300px;
 }
 
 
-
-
-
-
 /* Slider Swtich */
+
 .switch {
-  position: relative;top:10px;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
+
 /* Hide default HTML checkbox */
-.switch input {display:none;}
+
+.switch input {
+    display: none;
+}
+
 
 /* The slider */
+
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
-input:checked + .slider {
-  background-color: #2196F3;
+input:checked+.slider {
+    background-color: #2196F3;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
 }
+
 
 /* Rounded sliders */
+
 .slider.round {
-  border-radius: 34px;
+    border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 
-
-
-
-
-
-
 /* Input Range */
-input[type="range"]
-{
+
+input[type="range"] {
     -webkit-appearance: none;
     -moz-apperance: none;
     border-radius: 6px;
     height: 6px;
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        right top,
-        color-stop(0.15, #a8a8a8)
-    );
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0.15, #a8a8a8));
 }
 
-input[type='range']::-webkit-slider-circle 
-{
+input[type='range']::-webkit-slider-circle {
     -webkit-appearance: none !important;
     background-color: #E9E9E9;
     border: 1px solid #CECECE;

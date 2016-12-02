@@ -4,483 +4,477 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link type="text/css" rel="stylesheet" href="style.css" />
-	<link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
 </head>
 
 <body>
-	<h1>
-		Electronic Music Genres
-	</h1>
+    <h1>
+        Electronic Music Genres
+    </h1>
 
-	<p1> 
-		Today electronic music is prevailing in our society, but not many people recognize the variety of genres that they listen to daily. It has a rich universe of sub-genres interrelated with each other. And this could be easily traced based on the complexity of the flare circle. 
-	</p1>
+    <p1>
+        Today electronic music is prevailing in our society, but not many people recognize the variety of genres that they listen to daily. It has a rich universe of sub-genres interrelated with each other. And this could be easily traced based on the complexity of the flare circle.
+    </p1>
 
-	<table id="myTable">
-		<tr>
-			<td id="color"> </td>
-			<td id="genre">Breaks</td>
-		</tr>
-		<tr>
-			<td id="color"> </td>
-			<td id="genre">Disco</td>
-		</tr>
-		<tr>
-			<td id="color"> </td>
-			<td id="genre">Downtempo</td>
-		</tr>
-		<tr>
-			<td id="color"> </td>
-			<td id="genre">Garage</td>
-		</tr>
-		<tr>
-			<td id="color"> </td>
-			<td id="genre">Hardcore</td>
-		</tr>
-		<tr>
-			<td id="color"> </td>
-			<td id="genre">HipHop</td>
-		</tr>
-		<tr>
-			<td id="color"> </td>
-			<td id="genre">House</td>
-		</tr>
-		<tr>
-			<td id="color"> </td>
-			<td id="genre">Industrial</td>
-		</tr>
-		<tr>
-			<td id="color"> </td>
-			<td id="genre">Techno</td>
-		</tr>
-		<tr>
-			<td id="color"> </td>
-			<td id="genre">Trance</td>
-		</tr>
-		<tr>
-                    <td style="font-sizr:5px;">  </td>
-		</tr>
-		<tr>
-			<td id="color" style="font-size:20px;position:relative;top:-6px;left:-3px;color:#d62728;">〜</td>
-			<td id="genre">Influenced</td>
-		</tr>
-		<tr>
-			<td id="color" style="font-size:20px;position:relative;top:-6px;left:-3px;color:#2ca02c;">〜</td>
-			<td id="genre">Influenced by</td>
-		</tr>
-	</table>
-	<h2></h2>
-	<h4>
-		<div style="position:absolute;bottom:-220px;"><b>Settings</b>
+    <table id="myTable">
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">Breaks</td>
+        </tr>
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">Disco</td>
+        </tr>
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">Downtempo</td>
+        </tr>
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">Garage</td>
+        </tr>
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">Hardcore</td>
+        </tr>
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">HipHop</td>
+        </tr>
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">House</td>
+        </tr>
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">Industrial</td>
+        </tr>
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">Techno</td>
+        </tr>
+        <tr>
+            <td id="color"> </td>
+            <td id="genre">Trance</td>
+        </tr>
+        <tr>
+            <td style="font-sizr:5px;">  </td>
+        </tr>
+        <tr>
+            <td id="color" style="font-size:20px;position:relative;top:-6px;left:-3px;color:#d62728;">〜</td>
+            <td id="genre">Influenced</td>
+        </tr>
+        <tr>
+            <td id="color" style="font-size:20px;position:relative;top:-6px;left:-3px;color:#2ca02c;">〜</td>
+            <td id="genre">Influenced by</td>
+        </tr>
+    </table>
+    <h2></h2>
+    <h4>
+        <div style="position:absolute;bottom:-220px;"><b>Settings</b>
 
-			<div style="position:relative;bottom:-6px;">Tension:
-				<input style="position:relative;top:-2px; fill:yelow" id="tension_scroller" type="range" min="0" max="100" value="85"> 
-			</div>
+            <div style="position:relative;bottom:-6px;">Tension:
+                <input style="position:relative;top:-2px; fill:yelow" id="tension_scroller" type="range" min="0" max="100" value="85">
+            </div>
 
-			<div style="position:relative;bottom:-20px;">Stroke:
-				<input style="position:relative;top:3px;" type="button" onclick="increaseStroke()" class="btn btn-primary btn-lg raised" value="Bolder">
-				<input style="position:relative;top:3px;" type="button" onclick="decreaseStroke()" class="btn btn-primary btn-lg raised" value="Thinner">
-			</div>
-			
-			<div style="position:relative;bottom:-35px;">Change Color:
-				<label class="switch">
+            <div style="position:relative;bottom:-20px;">Stroke:
+                <input style="position:relative;top:3px;" type="button" onclick="increaseStroke()" class="btn btn-primary btn-lg raised" value="Bolder">
+                <input style="position:relative;top:3px;" type="button" onclick="decreaseStroke()" class="btn btn-primary btn-lg raised" value="Thinner">
+            </div>
+
+            <div style="position:relative;bottom:-35px;">Change Color:
+                <label class="switch">
 				  <input type="checkbox" id="changeColor" value="OFF" onclick="toggle(this);">
 				  <div class="slider round"></div>
 				</label>
-			</div>
-		</div>
-	</h4>
+            </div>
+        </div>
+    </h4>
 
-	<div>
-		<h5 id="credits">
-			<b>Mounted from GitHub</b><br><br>
-			<b>Created by:</b><br>Arseniy Khmelizde, Andrea Vitek, and Eyad Murshid in collaboration with Suresh K Lodha<br><br>
-			<div class="columns" id="column_1">
-				<b>Files Submitted:</b>
-				<ul>
-					<li>index.html</li>
-					<li>style.css</li>
-					<li>data.csv</li>
-					<li>flare-imports.json</li>
-				</ul>
-			</div>
-			<div class="columns" id="column_2" style="margin-left: 300px">
-				<b>Data Sources:</b>
-				<ul>
-					<li><a href="http://img4.wikia.nocookie.net/__cb20130207123759/4chanmusic/images/7/76/Electronic_Music_Guide.jpg">Let's talk music</a></li>
+    <div>
+        <h5 id="credits">
+            <b>Mounted from GitHub</b><br><br>
+            <b>Created by:</b><br>Arseniy Khmelizde, Andrea Vitek, and Eyad Murshid in collaboration with Suresh K Lodha<br><br>
+            <div class="columns" id="column_1">
+                <b>Files Submitted:</b>
+                <ul>
+                    <li>index.html</li>
+                    <li>style.css</li>
+                    <li>data.csv</li>
+                    <li>flare-imports.json</li>
+                </ul>
+            </div>
+            <div class="columns" id="column_2" style="margin-left: 300px">
+                <b>Data Sources:</b>
+                <ul>
+                    <li><a href="http://img4.wikia.nocookie.net/__cb20130207123759/4chanmusic/images/7/76/Electronic_Music_Guide.jpg">Let's talk music</a></li>
 
-					<li><a href="http://techno.org/electronic-music-guide/">Electronic Music Guide</a></li>
-				</ul>
-			</div>
-			<div class="columns" id="column_3" style="margin-left: 600px">
-				<b>Code Sources:</b>
-				<ul>
-					<li><a href="http://bl.ocks.org/mbostock/7607999">Hierarchical Edge Bundling</a></li>
-					<li><a href="http://chimera.labs.oreilly.com/books/1230000000345/ch11.html#_pie_layout">Pie layout</a></li>
-				</ul>
-			</div>
-		</h5>
-	</div>	
-	
-	
-		<script>
-			// Color Invert
-			function toggle(button)
-			{
-			  if(document.getElementById("changeColor").value=="OFF")
-			  {
-			   document.getElementById("changeColor").value="ON";
-				  
-			   // Body
-			   $('body').css({
-				 'backgroundColor' : "rgba(33,33,33,1)",
-				 'color' : "white",
-				 'transition': "1s"  
-			   }); 
-				  
-			   // Legend
-			   $('#myTable').css({
-				 'color' : "white",
-				 'transition': "1s"
-			   });
-				  
-			   // Circle
-			   $('.node').css({
-				 'fill' : "white"
-			   });
-				  
-			   //Tension
-			   $('#tension_scroller').css({
-				 'fill' : "white",
-				 'transition': "1s"
-			   });
-				  
-			   // Credits
-			   $('#credits').css({
-				 'color' : "white",
-				 'backgroundColor' : "black",  
-				 'transition': "1s"
-			   });
-			   $('#column_1').css({
-				 'color' : "white",
-				 'backgroundColor' : "black",
-				 'transition': "1s"
-			   });
-			   $('#column_2').css({
-				 'color' : "white",
-				 'backgroundColor' : "black",
-				 'transition': "1s"
-			   });
-			   $('#column_3').css({
-				 'color' : "white",
-				 'backgroundColor' : "black",  
-				 'transition': "1s"
-			   });	  
-			  }
-
-				
-			  else if(document.getElementById("changeColor").value=="ON")
-			  {
-			   document.getElementById("changeColor").value="OFF";
-				  
-			   // Body
-			   $('body').css({
-				 'backgroundColor' : "white",
-				 'color' : "black",
-				 'transition': "1s"  
-			   }); 
-				  
-			   // Legend
-			   $('#myTable').css({
-				 'color' : "black",
-				 'transition': "1s"
-			   });
-				  
-			   // Circle
-			   $('.node').css({
-				 'fill' : "black"
-			   });
-				  
-			   //Tension
-			   $('#tension_scroller').css({
-				 'fill' : "black",
-				 'transition': "1s"
-			   });
-				  
-			   // Credits
-			   $('#credits').css({
-				 'color' : "black",
-				 'backgroundColor' : "gainsboro",  
-				 'transition': "1s"
-			   });
-			   $('#column_1').css({
-				 'color' : "black",
-				 'backgroundColor' : "gainsboro",
-				 'transition': "1s"
-			   });
-			   $('#column_2').css({
-				 'color' : "black",
-				 'backgroundColor' : "gainsboro",
-				 'transition': "1s"
-			   });
-			   $('#column_3').css({
-				 'color' : "black",
-				 'backgroundColor' : "gainsboro",  
-				 'transition': "1s"
-			   });	  
-			  }
-			}
-		</script>
-	
-	
-	
-		<script>
-			// Nodes
-			(function() {
-				packages = {
-					// Lazily construct the package hierarchy from class names.
-					root: function(classes) {
-						var map = {};
-
-						function find(name, data) {
-							var node = map[name],
-								i;
-							if (!node) {
-								node = map[name] = data || {
-									name: name,
-									children: []
-								};
-								if (name.length) {
-									node.parent = find(name.substring(0, i = name.lastIndexOf(".")));
-									node.parent.children.push(node);
-									node.key = name.substring(i + 1);
-								}
-							}
-							return node;
-						}
-						classes.forEach(function(d) {
-							find(d.name, d);
-						});
-						return map[""];
-					}, // Return a list of imports for the given array of nodes.
-					imports: function(nodes) {
-						var map = {},
-							imports = [];
-						// Compute a map from name to node.
-						nodes.forEach(function(d) {
-							map[d.name] = d;
-						});
-						// For each import, construct a link from the source to target node.
-						nodes.forEach(function(d) {
-							if (d.imports) d.imports.forEach(function(i) {
-								imports.push({
-									source: map[d.name],
-									target: map[i]
-								});
-							});
-						});
-						return imports;
-					}
-				};
-			})();
-		</script>
-
-		<script type="text/javascript">
-			// Main Visualization
-			var animationEnabled = true;
-			var w = 1280,
-				h = 800,
-				rx = w / 2,
-				ry = h / 1.5,
-				m0, rotate = 0
-			var pathOp = 1;
-			radius = Math.min(w, h) / 2.1;
-			var splines = [];
-			var cluster = d3.layout.cluster().size([360, ry - 250]).sort(function(a, b) {
-				return d3.ascending(a.key, b.key);
-			});
-			var bundle = d3.layout.bundle();
-			var line = d3.svg.line.radial().interpolate("bundle").tension(.85).radius(function(d) {
-				return d.y;
-			}).angle(function(d) {
-				return d.x / 180 * Math.PI;
-			});
-			var div = d3.select("body").insert("div", "h2").style("top", "-40px").style("left", "-160px").style("width", w + "px").style("height", w + "px").style("position", "absolute").style("-webkit-backface-visibility", "hidden");
-			var color = d3.scale.ordinal().range(["#1ec4dc", "#551a8b", "#7b6888", "#66CD00", "#CD00CD", "#973632", "#b7bed0", "#f1bc30", "#65cca9", "#ed4845"]);
-			var arc = d3.svg.arc().outerRadius(radius - 95).innerRadius(radius - 85);
-			var pie = d3.layout.pie().sort(null).value(function(d) {
-				return d.numberOfSubs;
-			});
-			var svg = div.append("svg:svg").attr("width", w).attr("height", w).append("svg:g").attr("transform", "translate(" + rx + "," + ry + ")");
-			d3.csv("data.csv", type, function(error, data) {
-				if (error) throw error;
-				var g = svg.selectAll(".arc").data(pie(data)).enter().append("svg:g").attr("class", "arc");
-				g.append("path").attr("d", arc).style("fill", function(d) {
-					return color(d.data.subgenre);
-				});
-				for (var i = 0; i < 10; i++) {
-					var x = document.getElementById("myTable").rows[i].cells[0];
-					x.style.backgroundColor = color(i);
-				}
-			});
-			var tooltip = d3.select("body").append("div").attr("class", "tooltip").style("opacity", 0).on("click", mouseclickontooltip).attr("id", "tooltip").style("pointer-Events", "none");
-			svg.append("svg:path").attr("class", "arc").attr("d", d3.svg.arc().outerRadius(ry - 120).innerRadius(0).startAngle(0).endAngle(2 * Math.PI)).on("mousedown", mousedown);
-			d3.json("flare-imports.json", function(classes) {
-				var nodes = cluster.nodes(packages.root(classes)),
-					links = packages.imports(nodes),
-					splines = bundle(links);
-				var path = svg.selectAll("path.link").data(links).enter().append("svg:path").attr("class", function(d) {
-					return "link source-" + d.source.key + " target-" + d.target.key;
-				}).attr("d", function(d, i) {
-					return line(splines[i]);
-				});
-				svg.selectAll("g.node").data(nodes.filter(function(n) {
-					return !n.children;
-				})).enter().append("svg:g").attr("class", "node").attr("id", function(d) {
-					return "node-" + d.key;
-				}).attr("transform", function(d) {
-					return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")";
-				}).append("svg:text").attr("dx", function(d) {
-					return d.x < 180 ? 20 : -20;
-				}).attr("dy", ".31em").attr("text-anchor", function(d) {
-					return d.x < 180 ? "start" : "end";
-				}).attr("transform", function(d) {
-					return d.x < 180 ? null : "rotate(180)";
-				}).text(function(d) {
-					return d.key.split('_').join(' ');
-				}).on("mouseover", mouseover).on("mouseout", mouseout).on("click", mouseclick);
-				d3.select("input[type=range]").on("change", function() {
-					line.tension(this.value / 100);
-					path.attr("d", function(d, i) {
-						return line(splines[i]);
-					});
-				});
-			});
-			d3.select(window).on("mousemove", mousemove).on("mouseup", mouseup);
-
-			function mouse(e) {
-				return [e.pageX - rx, e.pageY - ry];
-			}
-
-			function mousedown() {
-				m0 = mouse(d3.event);
-				d3.event.preventDefault();
-			}
-
-			function mousemove() {
-				if (m0) {
-					var m1 = mouse(d3.event),
-						dm = Math.atan2(cross(m0, m1), dot(m0, m1)) * 180 / Math.PI;
-					div.style("-webkit-transform", "translateY(" + (ry - rx) + "px)rotateZ(" + dm + "deg)translateY(" + (rx - ry) + "px)");
-				}
-			}
-
-			function mouseup() {
-				if (m0) {
-					var m1 = mouse(d3.event),
-						dm = Math.atan2(cross(m0, m1), dot(m0, m1)) * 180 / Math.PI;
-					rotate += dm;
-					if (rotate > 360) rotate -= 360;
-					else if (rotate < 0) rotate += 360;
-					m0 = null;
-					div.style("-webkit-transform", null);
-					svg.attr("transform", "translate(" + rx + "," + ry + ")rotate(" + rotate + ")").selectAll("g.node text").attr("dx", function(d) {
-						return (d.x + rotate) % 360 < 180 ? 20 : -20;
-					}).attr("text-anchor", function(d) {
-						return (d.x + rotate) % 360 < 180 ? "start" : "end";
-					}).attr("transform", function(d) {
-						return (d.x + rotate) % 360 < 180 ? null : "rotate(180)";
-					});
-				}
-			}
-
-			function mouseover(d) {
-				if (animationEnabled) {
-					svg.selectAll("path.link.target-" + d.key).classed("target", true).each(updateNodes("source", true));
-					svg.selectAll("path.link.source-" + d.key).classed("source", true).each(updateNodes("target", true));
-					svg.selectAll("path.link").classed("free", true);
-					svg.selectAll("g.node").classed("free", true);
-				}
-			}
-
-			function mouseout(d) {
-				if (animationEnabled) {
-					svg.selectAll("path.link.source-" + d.key).classed("source", false).each(updateNodes("target", false));
-					svg.selectAll("path.link.target-" + d.key).classed("target", false).each(updateNodes("source", false));
-					svg.selectAll("path.link").classed("free", false);
-					svg.selectAll("g.node").classed("free", false);
-				}
-			}
-
-			function mouseclick(d) {
-				var genreName = d.name.split(".")[1].split('_').join(' ').replace(/\b\w/g, l => l.toUpperCase());
-				var subGenreName = d.name.split(".")[2].split('_').join(' ');
-				tooltip.html("</br></br><font size=\"6\">" + subGenreName + "</font></br></br>Genre: <span style='color:gray'>" + genreName + "</span></br>" + "</br>Notable Artists: <span style='color:gray'>" + d.artist.join(', ') + "</span></br>" + "</br>Year: <span style='color:gray'>" + d.year + "</span></br></br>" + "<iframe src=\"https://embed.spotify.com/?uri=spotify:" + d.link + "&theme=white\" width=\"300\" height=\"300\" frameborder=\"0\" allowtransparency=\"false\"></iframe></span></br>");
-				tooltip.transition().duration(1000).style("opacity", .90);
-				document.getElementById("tooltip").style.pointerEvents = "auto";
-
-				mouseout(d);
-				svg.selectAll("g.node").style("opacity", 0.1);
-				svg.selectAll("g.node").style("pointer-events", "none");
-				animationEnabled = false;
-			}
-
-			function mouseclickontooltip(d) {
-				tooltip.transition().duration(1000).style("opacity", 0);
-				document.getElementById("tooltip").style.pointerEvents = "none";
-				svg.selectAll("g.node").style("opacity", 1);
-				svg.selectAll("g.node").style("pointer-events", "auto");
-				animationEnabled = true;
-			}
-
-			function updateNodes(name, value) {
-				return function(d) {
-					if (value) this.parentNode.appendChild(this);
-					svg.select("#node-" + d[name].key).classed(name, value);
-				};
-			}
+                    <li><a href="http://techno.org/electronic-music-guide/">Electronic Music Guide</a></li>
+                </ul>
+            </div>
+            <div class="columns" id="column_3" style="margin-left: 600px">
+                <b>Code Sources:</b>
+                <ul>
+                    <li><a href="http://bl.ocks.org/mbostock/7607999">Hierarchical Edge Bundling</a></li>
+                    <li><a href="http://chimera.labs.oreilly.com/books/1230000000345/ch11.html#_pie_layout">Pie layout</a></li>
+                </ul>
+            </div>
+        </h5>
+    </div>
 
 
-			function cross(a, b) {
-				return a[0] * b[1] - a[1] * b[0];
-			}
+    <script>
+        // Color Invert
+        function toggle(button) {
+            if (document.getElementById("changeColor").value == "OFF") {
+                document.getElementById("changeColor").value = "ON";
 
-			function dot(a, b) {
-				return a[0] * b[0] + a[1] * b[1];
-			}
+                // Body
+                $('body').css({
+                    'backgroundColor': "rgba(33,33,33,1)",
+                    'color': "white",
+                    'transition': "1s"
+                });
 
-			function type(d) {
-				d.numberOfSubs = +d.numberOfSubs;
-				return d;
-			}
+                // Legend
+                $('#myTable').css({
+                    'color': "white",
+                    'transition': "1s"
+                });
 
-			function increaseStroke() {
-				var x = document.getElementsByClassName("link");
-				if (pathOp < 3.0) {
-					pathOp += 0.5;
-					for (var i = 0, ii = x.length; i < ii; i++) {
-						x[i].style.strokeWidth = pathOp + "px";
-					};
-				} else {
-					console.log("Already big")
-				}
-			}
+                // Circle
+                $('.node').css({
+                    'fill': "white"
+                });
 
-			function decreaseStroke() {
-				var x = document.getElementsByClassName("link");
-				if (pathOp > 0.5) {
-					pathOp -= 0.5;
-					for (var i = 0, ii = x.length; i < ii; i++) {
-						x[i].style.strokeWidth = pathOp + "px";
-					};
-				} else {
-					console.log("Already small")
-				}
-			}
-		</script>
+                //Tension
+                $('#tension_scroller').css({
+                    'fill': "white",
+                    'transition': "1s"
+                });
+
+                // Credits
+                $('#credits').css({
+                    'color': "white",
+                    'backgroundColor': "black",
+                    'transition': "1s"
+                });
+                $('#column_1').css({
+                    'color': "white",
+                    'backgroundColor': "black",
+                    'transition': "1s"
+                });
+                $('#column_2').css({
+                    'color': "white",
+                    'backgroundColor': "black",
+                    'transition': "1s"
+                });
+                $('#column_3').css({
+                    'color': "white",
+                    'backgroundColor': "black",
+                    'transition': "1s"
+                });
+            } else if (document.getElementById("changeColor").value == "ON") {
+                document.getElementById("changeColor").value = "OFF";
+
+                // Body
+                $('body').css({
+                    'backgroundColor': "white",
+                    'color': "black",
+                    'transition': "1s"
+                });
+
+                // Legend
+                $('#myTable').css({
+                    'color': "black",
+                    'transition': "1s"
+                });
+
+                // Circle
+                $('.node').css({
+                    'fill': "black"
+                });
+
+                //Tension
+                $('#tension_scroller').css({
+                    'fill': "black",
+                    'transition': "1s"
+                });
+
+                // Credits
+                $('#credits').css({
+                    'color': "black",
+                    'backgroundColor': "gainsboro",
+                    'transition': "1s"
+                });
+                $('#column_1').css({
+                    'color': "black",
+                    'backgroundColor': "gainsboro",
+                    'transition': "1s"
+                });
+                $('#column_2').css({
+                    'color': "black",
+                    'backgroundColor': "gainsboro",
+                    'transition': "1s"
+                });
+                $('#column_3').css({
+                    'color': "black",
+                    'backgroundColor': "gainsboro",
+                    'transition': "1s"
+                });
+            }
+        }
+    </script>
+
+
+
+    <script>
+        // Nodes
+        (function() {
+            packages = {
+                // Lazily construct the package hierarchy from class names.
+                root: function(classes) {
+                    var map = {};
+
+                    function find(name, data) {
+                        var node = map[name],
+                            i;
+                        if (!node) {
+                            node = map[name] = data || {
+                                name: name,
+                                children: []
+                            };
+                            if (name.length) {
+                                node.parent = find(name.substring(0, i = name.lastIndexOf(".")));
+                                node.parent.children.push(node);
+                                node.key = name.substring(i + 1);
+                            }
+                        }
+                        return node;
+                    }
+                    classes.forEach(function(d) {
+                        find(d.name, d);
+                    });
+                    return map[""];
+                }, // Return a list of imports for the given array of nodes.
+                imports: function(nodes) {
+                    var map = {},
+                        imports = [];
+                    // Compute a map from name to node.
+                    nodes.forEach(function(d) {
+                        map[d.name] = d;
+                    });
+                    // For each import, construct a link from the source to target node.
+                    nodes.forEach(function(d) {
+                        if (d.imports) d.imports.forEach(function(i) {
+                            imports.push({
+                                source: map[d.name],
+                                target: map[i]
+                            });
+                        });
+                    });
+                    return imports;
+                }
+            };
+        })();
+    </script>
+
+    <script type="text/javascript">
+        // Main Visualization
+        var animationEnabled = true;
+        var w = 1280,
+            h = 800,
+            rx = w / 2,
+            ry = h / 1.5,
+            m0, rotate = 0
+        var pathOp = 1;
+        radius = Math.min(w, h) / 2.1;
+        var splines = [];
+        var cluster = d3.layout.cluster().size([360, ry - 250]).sort(function(a, b) {
+            return d3.ascending(a.key, b.key);
+        });
+        var bundle = d3.layout.bundle();
+        var line = d3.svg.line.radial().interpolate("bundle").tension(.85).radius(function(d) {
+            return d.y;
+        }).angle(function(d) {
+            return d.x / 180 * Math.PI;
+        });
+        var div = d3.select("body").insert("div", "h2").style("top", "-40px").style("left", "-160px").style("width", w + "px").style("height", w + "px").style("position", "absolute").style("-webkit-backface-visibility", "hidden");
+        var color = d3.scale.ordinal().range(["#1ec4dc", "#551a8b", "#7b6888", "#66CD00", "#CD00CD", "#973632", "#b7bed0", "#f1bc30", "#65cca9", "#ed4845"]);
+        var arc = d3.svg.arc().outerRadius(radius - 95).innerRadius(radius - 85);
+        var pie = d3.layout.pie().sort(null).value(function(d) {
+            return d.numberOfSubs;
+        });
+        var svg = div.append("svg:svg").attr("width", w).attr("height", w).append("svg:g").attr("transform", "translate(" + rx + "," + ry + ")");
+        d3.csv("data.csv", type, function(error, data) {
+            if (error) throw error;
+            var g = svg.selectAll(".arc").data(pie(data)).enter().append("svg:g").attr("class", "arc");
+            g.append("path").attr("d", arc).style("fill", function(d) {
+                return color(d.data.subgenre);
+            });
+            for (var i = 0; i < 10; i++) {
+                var x = document.getElementById("myTable").rows[i].cells[0];
+                x.style.backgroundColor = color(i);
+            }
+        });
+        var tooltip = d3.select("body").append("div").attr("class", "tooltip").style("opacity", 0).on("click", mouseclickontooltip).attr("id", "tooltip").style("pointer-Events", "none");
+        svg.append("svg:path").attr("class", "arc").attr("d", d3.svg.arc().outerRadius(ry - 120).innerRadius(0).startAngle(0).endAngle(2 * Math.PI)).on("mousedown", mousedown);
+        d3.json("flare-imports.json", function(classes) {
+            var nodes = cluster.nodes(packages.root(classes)),
+                links = packages.imports(nodes),
+                splines = bundle(links);
+            var path = svg.selectAll("path.link").data(links).enter().append("svg:path").attr("class", function(d) {
+                return "link source-" + d.source.key + " target-" + d.target.key;
+            }).attr("d", function(d, i) {
+                return line(splines[i]);
+            });
+            svg.selectAll("g.node").data(nodes.filter(function(n) {
+                return !n.children;
+            })).enter().append("svg:g").attr("class", "node").attr("id", function(d) {
+                return "node-" + d.key;
+            }).attr("transform", function(d) {
+                return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")";
+            }).append("svg:text").attr("dx", function(d) {
+                return d.x < 180 ? 20 : -20;
+            }).attr("dy", ".31em").attr("text-anchor", function(d) {
+                return d.x < 180 ? "start" : "end";
+            }).attr("transform", function(d) {
+                return d.x < 180 ? null : "rotate(180)";
+            }).text(function(d) {
+                return d.key.split('_').join(' ');
+            }).on("mouseover", mouseover).on("mouseout", mouseout).on("click", mouseclick);
+            d3.select("input[type=range]").on("change", function() {
+                line.tension(this.value / 100);
+                path.attr("d", function(d, i) {
+                    return line(splines[i]);
+                });
+            });
+        });
+        d3.select(window).on("mousemove", mousemove).on("mouseup", mouseup);
+
+        function mouse(e) {
+            return [e.pageX - rx, e.pageY - ry];
+        }
+
+        function mousedown() {
+            m0 = mouse(d3.event);
+            d3.event.preventDefault();
+        }
+
+        function mousemove() {
+            if (m0) {
+                var m1 = mouse(d3.event),
+                    dm = Math.atan2(cross(m0, m1), dot(m0, m1)) * 180 / Math.PI;
+                div.style("-webkit-transform", "translateY(" + (ry - rx) + "px)rotateZ(" + dm + "deg)translateY(" + (rx - ry) + "px)");
+            }
+        }
+
+        function mouseup() {
+            if (m0) {
+                var m1 = mouse(d3.event),
+                    dm = Math.atan2(cross(m0, m1), dot(m0, m1)) * 180 / Math.PI;
+                rotate += dm;
+                if (rotate > 360) rotate -= 360;
+                else if (rotate < 0) rotate += 360;
+                m0 = null;
+                div.style("-webkit-transform", null);
+                svg.attr("transform", "translate(" + rx + "," + ry + ")rotate(" + rotate + ")").selectAll("g.node text").attr("dx", function(d) {
+                    return (d.x + rotate) % 360 < 180 ? 20 : -20;
+                }).attr("text-anchor", function(d) {
+                    return (d.x + rotate) % 360 < 180 ? "start" : "end";
+                }).attr("transform", function(d) {
+                    return (d.x + rotate) % 360 < 180 ? null : "rotate(180)";
+                });
+            }
+        }
+
+        function mouseover(d) {
+            if (animationEnabled) {
+                svg.selectAll("path.link.target-" + d.key).classed("target", true).each(updateNodes("source", true));
+                svg.selectAll("path.link.source-" + d.key).classed("source", true).each(updateNodes("target", true));
+                svg.selectAll("path.link").classed("free", true);
+                svg.selectAll("g.node").classed("free", true);
+            }
+        }
+
+        function mouseout(d) {
+            if (animationEnabled) {
+                svg.selectAll("path.link.source-" + d.key).classed("source", false).each(updateNodes("target", false));
+                svg.selectAll("path.link.target-" + d.key).classed("target", false).each(updateNodes("source", false));
+                svg.selectAll("path.link").classed("free", false);
+                svg.selectAll("g.node").classed("free", false);
+            }
+        }
+
+        function mouseclick(d) {
+            var genreName = d.name.split(".")[1].split('_').join(' ').replace(/\b\w/g, l => l.toUpperCase());
+            var subGenreName = d.name.split(".")[2].split('_').join(' ');
+            tooltip.html("</br></br><font size=\"6\">" + subGenreName + "</font></br></br>Genre: <span style='color:gray'>" + genreName + "</span></br>" + "</br>Notable Artists: <span style='color:gray'>" + d.artist.join(', ') + "</span></br>" + "</br>Year: <span style='color:gray'>" + d.year + "</span></br></br>" + "<iframe src=\"https://embed.spotify.com/?uri=spotify:" + d.link + "&theme=white\" width=\"300\" height=\"300\" frameborder=\"0\" allowtransparency=\"false\"></iframe></span></br>" + "</br><span style='color:gray'>Click to Dismiss</span>");
+            tooltip.transition().duration(1000).style("opacity", .90);
+            document.getElementById("tooltip").style.pointerEvents = "auto";
+
+            mouseout(d);
+            svg.selectAll("g.node").style("opacity", 0.1);
+            svg.selectAll("g.node").style("pointer-events", "none");
+            animationEnabled = false;
+        }
+
+        function mouseclickontooltip(d) {
+            tooltip.transition().duration(1000).style("opacity", 0);
+            document.getElementById("tooltip").style.pointerEvents = "none";
+            svg.selectAll("g.node").style("opacity", 1);
+            svg.selectAll("g.node").style("pointer-events", "auto");
+            animationEnabled = true;
+        }
+
+        function updateNodes(name, value) {
+            return function(d) {
+                if (value) this.parentNode.appendChild(this);
+                svg.select("#node-" + d[name].key).classed(name, value);
+            };
+        }
+
+
+        function cross(a, b) {
+            return a[0] * b[1] - a[1] * b[0];
+        }
+
+        function dot(a, b) {
+            return a[0] * b[0] + a[1] * b[1];
+        }
+
+        function type(d) {
+            d.numberOfSubs = +d.numberOfSubs;
+            return d;
+        }
+
+        function increaseStroke() {
+            var x = document.getElementsByClassName("link");
+            if (pathOp < 3.0) {
+                pathOp += 0.5;
+                for (var i = 0, ii = x.length; i < ii; i++) {
+                    x[i].style.strokeWidth = pathOp + "px";
+                };
+            } else {
+                console.log("Already big")
+            }
+        }
+
+        function decreaseStroke() {
+            var x = document.getElementsByClassName("link");
+            if (pathOp > 0.5) {
+                pathOp -= 0.5;
+                for (var i = 0, ii = x.length; i < ii; i++) {
+                    x[i].style.strokeWidth = pathOp + "px";
+                };
+            } else {
+                console.log("Already small")
+            }
+        }
+    </script>
 </body>
 
 </html>
