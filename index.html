@@ -76,7 +76,7 @@
 		<div style="position:absolute;bottom:-220px;"><b>Settings</b>
 
 			<div style="position:relative;bottom:-6px;">Tension:
-				<input style="position:relative;top:3px;" id="tension_scroller" type="range" min="0" max="100" value="85"> 
+				<input style="position:relative;top:-2px; fill:yelow" id="tension_scroller" type="range" min="0" max="100" value="85"> 
 			</div>
 
 			<div style="position:relative;bottom:-20px;">Stroke:
@@ -85,9 +85,7 @@
 			</div>
 			
 			<div style="position:relative;bottom:-35px;">Change Color:
-<!--				<input style="position:relative;top:3px;" type="button" onclick="changeColor(); return false;" class="btn btn-primary btn-lg raised" value="Click Me">-->
 				<label class="switch">
-<!--				  <input type="checkbox" onclick="changeColor();">-->
 				  <input type="checkbox" id="changeColor" value="OFF" onclick="toggle(this);">
 				  <div class="slider round"></div>
 				</label>
@@ -145,9 +143,12 @@
 				  $('.node').css({
         		  	'fill' : "white"
     			  });
+				  $('.source').css({
+        		  	'fill' : "#2ca02c"
+    			  });
 				  
 			   //Tension
-			   document.getElementById("tension_scroller").style.color = "white";
+			   document.getElementById("tension_scroller").style.fill = "white";
 				  
 			   // Credits
 			   document.getElementById("credits").style.color = "white";
@@ -173,6 +174,9 @@
 			   $('.node').css({
 			   	  'fill' : "black"
 			   });
+			   $('.source').css({
+				 'fill' : "#2ca02c"
+			   });  
 				  
 			   // Credits
 			   document.getElementById("credits").style.color = "black";

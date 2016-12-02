@@ -6,7 +6,6 @@ path.arc {
 .node {
     transition: 0.5s;
     font: 300 10px "Helvetica Neue";
-	fill: black;
 }
 
 table {
@@ -17,7 +16,6 @@ table {
 
 table,
 td {
-/*    border: 1px solid grey;*/
     float: left;
     display: block;
     font-size: 10px;
@@ -53,9 +51,10 @@ td {
     stroke: #d62728;
 }
 
+
 .node.source {
     transition: 0.5s;
-    fill: #2ca02c;
+    fill: #2ca02c !important;
     opacity: 1 !important;
 }
 
@@ -327,7 +326,10 @@ div.tooltip {
 
 
 
-/* Slider */
+
+
+
+/* Slider Swtich */
 .switch {
   position: relative;top:10px;
   display: inline-block;
@@ -384,4 +386,35 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+/* Input Range */
+input[type="range"]
+{
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    border-radius: 6px;
+    height: 6px;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0.15, #a8a8a8)
+    );
+}
+
+input[type='range']::-webkit-slider-circle 
+{
+    -webkit-appearance: none !important;
+    background-color: #E9E9E9;
+    border: 1px solid #CECECE;
+    height: 15px;
+    width: 15px;
 }
