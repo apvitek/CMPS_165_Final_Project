@@ -11,7 +11,7 @@ path.arc {
 table {
     margin-top: 90px;
     font: 300 30px "Helvetica Neue";
-	color: black;
+	color: #000000;
 }
 
 table,
@@ -166,8 +166,8 @@ body {
     overflow: hidden;
     position: relative;
     width: 960px;
-	color: black;
-	background-color: white;
+	color: #000000;
+	background-color: #ffffff;
 }
 
 a:link,
@@ -240,16 +240,16 @@ h5 {
     font: 300 15px "Helvetica Neue";
     position: absolute;
     bottom: -410px;
-    background-color: white;
+    background-color: #ffffff;
     width: 900px;
     height: 100px;
     padding: 10px;
-	color: black;
+	color: #000000;
 }
 
 .columns {
     font: 300 15px "Helvetica Neue";
-    background-color: white;
+    background-color: #ffffff;
     position: absolute;
     height: 160px;
     -webkit-columns: 300px 1; /* Chrome, Safari, Opera */
@@ -300,7 +300,7 @@ body {
     cursor: pointer;
     font-size: 14px;
     opacity: 1;
-    fill: black;
+    fill: #000000;
 }
 
 body>svg {
@@ -312,14 +312,14 @@ body>svg {
 div.tooltip {
     position: absolute;
     text-align: center;
-	color: black;
+	color: #000000;
     top: 210px;
     left: 196px;
     width: 564px;
     height: 564px;
     padding: 2px;
     font: 15px "Helvetica Neue";
-    background: white;
+    background: #ffffff;
     border: 0px;
     border-radius: 300px;
 }
@@ -360,7 +360,7 @@ div.tooltip {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: #ffffff;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -417,4 +417,12 @@ input[type='range']::-webkit-slider-circle
     border: 1px solid #CECECE;
     height: 15px;
     width: 15px;
+}
+
+
+
+/* Element.style issue */
+element.style
+{
+	display: inline !important;
 }

@@ -125,8 +125,9 @@
 	</div>	
 	
 	
+	
+		<!--      Color Invert       -->
 		<script>
-			// Color Invert
 			function toggle(button)
 			{
 			  if(document.getElementById("changeColor").value=="OFF")
@@ -135,99 +136,99 @@
 				  
 			   // Body
 			   $('body').css({
-				 'backgroundColor' : "black",
-				 'color' : "white",
+				 'backgroundColor' : "#000000",
+				 'color' : "#ffffff",
 				 'transition': "1s"  
 			   }); 
 				  
 			   // Legend
 			   $('#myTable').css({
-				 'color' : "white",
+				 'color' : "#ffffff",
 				 'transition': "1s"
 			   });
 				  
 			   // Circle
 			   $('.node').css({
-				 'fill' : "white"
+				 'fill' : "#ffffff"
 			   });
 				  
 			   //Tension
 			   $('#tension_scroller').css({
-				 'fill' : "white",
+				 'fill' : "#ffffff",
 				 'transition': "1s"
 			   });
 				  
 			   // Credits
 			   $('#credits').css({
-				 'color' : "white",
-				 'backgroundColor' : "black",  
+				 'color' : "#ffffff",
+				 'backgroundColor' : "#000000",  
 				 'transition': "1s"
 			   });
 			   $('#column_1').css({
-				 'color' : "white",
-				 'backgroundColor' : "black",
+				 'color' : "#ffffff",
+				 'backgroundColor' : "#000000",
 				 'transition': "1s"
 			   });
 			   $('#column_2').css({
-				 'color' : "white",
-				 'backgroundColor' : "black",
+				 'color' : "#ffffff",
+				 'backgroundColor' : "#000000",
 				 'transition': "1s"
 			   });
 			   $('#column_3').css({
-				 'color' : "white",
-				 'backgroundColor' : "black",  
+				 'color' : "#ffffff",
+				 'backgroundColor' : "#000000",  
 				 'transition': "1s"
 			   });	  
 			  }
 
 				
-			  else if(document.getElementById("changeColor").value=="ON")
+			  else
 			  {
 			   document.getElementById("changeColor").value="OFF";
 				  
 			   // Body
 			   $('body').css({
-				 'backgroundColor' : "white",
-				 'color' : "black",
+				 'backgroundColor' : "#ffffff",
+				 'color' : "#000000",
 				 'transition': "1s"  
 			   }); 
 				  
 			   // Legend
 			   $('#myTable').css({
-				 'color' : "black",
+				 'color' : "#000000",
 				 'transition': "1s"
 			   });
 				  
 			   // Circle
 			   $('.node').css({
-				 'fill' : "black"
+				 'fill' : "#000000"
 			   });
 				  
 			   //Tension
 			   $('#tension_scroller').css({
-				 'fill' : "black",
+				 'fill' : "#000000",
 				 'transition': "1s"
 			   });
 				  
 			   // Credits
 			   $('#credits').css({
-				 'color' : "black",
-				 'backgroundColor' : "white",  
+				 'color' : "#000000",
+				 'backgroundColor' : "#ffffff",  
 				 'transition': "1s"
 			   });
 			   $('#column_1').css({
-				 'color' : "black",
-				 'backgroundColor' : "white",
+				 'color' : "#000000",
+				 'backgroundColor' : "#ffffff",
 				 'transition': "1s"
 			   });
 			   $('#column_2').css({
-				 'color' : "black",
-				 'backgroundColor' : "white",
+				 'color' : "#000000",
+				 'backgroundColor' : "#ffffff",
 				 'transition': "1s"
 			   });
 			   $('#column_3').css({
-				 'color' : "black",
-				 'backgroundColor' : "white",  
+				 'color' : "#000000",
+				 'backgroundColor' : "#ffffff",  
 				 'transition': "1s"
 			   });	  
 			  }
@@ -236,8 +237,8 @@
 	
 	
 	
+		<!--		Nodes 		  -->
 		<script>
-			// Nodes
 			(function() {
 				packages = {
 					// Lazily construct the package hierarchy from class names.
@@ -286,9 +287,10 @@
 				};
 			})();
 		</script>
-
+	
+	
+		<!--			Main Visualization				-->
 		<script type="text/javascript">
-			// Main Visualization
 			var animationEnabled = true;
 			var w = 1280,
 				h = 800,
