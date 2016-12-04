@@ -11,11 +11,7 @@ path.arc {
 table {
     margin-top: 90px;
     font: 300 30px "Helvetica Neue";
-<<<<<<< HEAD
 	color: #000000;
-=======
-    color: black;
->>>>>>> origin/master
 }
 
 table,
@@ -28,7 +24,7 @@ td {
 .link {
     transition: 0.5s;
     fill: none;
-    stroke: #26B5FF;
+    stroke: #1f77b4;
     stroke-opacity: 0.4;
     pointer-events: none;
 }
@@ -38,15 +34,6 @@ td {
     transition: 0.5s;
     stroke-opacity: 0.6 !important;
     stroke-width: 2px;
-}
-
-.link.source {
-    stroke: #d62728;
-}
-
-.link.target {
-    transition: 0.5s;
-    stroke: #2ca02c;
 }
 
 .link.free {
@@ -60,6 +47,11 @@ td {
     opacity: 1 !important;
 }
 
+.link.source {
+    stroke: #d62728;
+}
+
+
 .node.source {
     transition: 0.5s;
     fill: #2ca02c !important;
@@ -69,6 +61,11 @@ td {
 .node.free {
     transition: 0.5s;
     opacity: 0.1;
+}
+
+.link.target {
+    transition: 0.5s;
+    stroke: #2ca02c;
 }
 
 #genre {
@@ -169,13 +166,8 @@ body {
     overflow: hidden;
     position: relative;
     width: 960px;
-<<<<<<< HEAD
 	color: #000000;
 	background-color: #ffffff;
-=======
-    color: black;
-    background-color: white;
->>>>>>> origin/master
 }
 
 a:link,
@@ -210,8 +202,8 @@ body>ul {
 
 h1 {
     font: 500 30px;
-    font-family: 'Bungee Outline';
-    font-weight: bold;
+	font-family: 'Bungee Outline';
+	font-weight: bold;
     text-align: center;
     margin: 5px;
 }
@@ -248,34 +240,20 @@ h5 {
     font: 300 15px "Helvetica Neue";
     position: absolute;
     bottom: -410px;
-<<<<<<< HEAD
     background-color: #ffffff;
     width: 900px;
     height: 100px;
     padding: 10px;
 	color: #000000;
-=======
-    background-color: gainsboro;
-    width: 900px;
-    height: 100px;
-    padding: 10px;
-    color: black;
->>>>>>> origin/master
 }
 
 .columns {
     font: 300 15px "Helvetica Neue";
-<<<<<<< HEAD
     background-color: #ffffff;
-=======
-    background-color: gainsboro;
->>>>>>> origin/master
     position: absolute;
     height: 160px;
-    -webkit-columns: 300px 1;
-    /* Chrome, Safari, Opera */
-    -moz-columns: 300px 1;
-    /* Firefox */
+    -webkit-columns: 300px 1; /* Chrome, Safari, Opera */
+    -moz-columns: 300px 1; /* Firefox */
     columns: 300px 1;
     padding: 10px;
     left: 0px;
@@ -334,62 +312,48 @@ body>svg {
 div.tooltip {
     position: absolute;
     text-align: center;
-<<<<<<< HEAD
 	color: #000000;
-=======
-    color: black;
->>>>>>> origin/master
     top: 210px;
     left: 196px;
     width: 564px;
     height: 564px;
     padding: 2px;
-<<<<<<< HEAD
     font: 15px "Helvetica Neue";
     background: #ffffff;
-=======
-    font: 300 15px "Helvetica Neue";
-    background: white;
->>>>>>> origin/master
     border: 0px;
     border-radius: 300px;
 }
 
 
+
+
+
+
 /* Slider Swtich */
-
 .switch {
-    position: relative;
-    top: 10px;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+  position: relative;top:10px;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
-
 
 /* Hide default HTML checkbox */
-
-.switch input {
-    display: none;
-}
-
+.switch input {display:none;}
 
 /* The slider */
-
 .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .slider:before {
-<<<<<<< HEAD
   position: absolute;
   content: "";
   height: 26px;
@@ -399,56 +363,55 @@ div.tooltip {
   background-color: #ffffff;
   -webkit-transition: .4s;
   transition: .4s;
-=======
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
->>>>>>> origin/master
 }
 
-input:checked+.slider {
-    background-color: #2196F3;
+input:checked + .slider {
+  background-color: #2196F3;
 }
 
-input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
 }
 
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }
-
 
 /* Rounded sliders */
-
 .slider.round {
-    border-radius: 34px;
+  border-radius: 34px;
 }
 
 .slider.round:before {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 
-/* Input Range */
 
-input[type="range"] {
+
+
+
+
+
+/* Input Range */
+input[type="range"]
+{
     -webkit-appearance: none;
     -moz-apperance: none;
     border-radius: 6px;
     height: 6px;
-    background-image: -webkit-gradient( linear, left top, right top, color-stop(0.15, #a8a8a8));
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0.15, #a8a8a8)
+    );
 }
 
-input[type='range']::-webkit-slider-circle {
+input[type='range']::-webkit-slider-circle 
+{
     -webkit-appearance: none !important;
     background-color: #E9E9E9;
     border: 1px solid #CECECE;
