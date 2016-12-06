@@ -62,6 +62,17 @@
 		</tr>
 		<tr>
 		</tr>
+        <tr>
+		</tr>
+        <tr>
+		</tr>
+        <tr>
+		</tr>
+        <tr>
+		</tr>
+        <tr>
+		</tr>\<tr>
+		</tr>
 		<tr>
 			<td id="color" style="font-size:20px;position:relative;top:-6px;left:-3px;color:#d62728;">〜</td>
 			<td id="genre">Influenced</td>
@@ -136,7 +147,7 @@
 				  
 			   // Body
 			   $('body').css({
-				 'backgroundColor' : "#000000",
+				 'backgroundColor' : "rgb(33, 33, 33)",
 				 'color' : "#ffffff",
 				 'transition': "1s"  
 			   }); 
@@ -213,22 +224,22 @@
 			   // Credits
 			   $('#credits').css({
 				 'color' : "#000000",
-				 'backgroundColor' : "#ffffff",  
+				 'backgroundColor' : "rgb(239, 239, 239)",  
 				 'transition': "1s"
 			   });
 			   $('#column_1').css({
 				 'color' : "#000000",
-				 'backgroundColor' : "#ffffff",
+				 'backgroundColor' : "rgb(239, 239, 239)",
 				 'transition': "1s"
 			   });
 			   $('#column_2').css({
 				 'color' : "#000000",
-				 'backgroundColor' : "#ffffff",
+				 'backgroundColor' : "rgb(239, 239, 239)",
 				 'transition': "1s"
 			   });
 			   $('#column_3').css({
 				 'color' : "#000000",
-				 'backgroundColor' : "#ffffff",  
+				 'backgroundColor' : "rgb(239, 239, 239)",  
 				 'transition': "1s"
 			   });	  
 			  }
@@ -310,7 +321,7 @@
 				return d.x / 180 * Math.PI;
 			});
 			var div = d3.select("body").insert("div", "h2").style("top", "-40px").style("left", "-160px").style("width", w + "px").style("height", w + "px").style("position", "absolute").style("-webkit-backface-visibility", "hidden");
-			var color = d3.scale.ordinal().range(["#1ec4dc", "#551a8b", "#7b6888", "#66CD00", "#CD00CD", "#CD2626", "#ccac00", "#ffff00", "#65cca9", "#ff8c00"]);
+			var color = d3.scale.ordinal().range(["#4F5557", "#A0522D", "#FFB6C1", "#008080", "#8FBC8B", "#CD2626", "#FFD700", "#00BFFF", "#D2B48C", "#ff8c00"]);
 			var arc = d3.svg.arc().outerRadius(radius - 95).innerRadius(radius - 85);
 			var pie = d3.layout.pie().sort(null).value(function(d) {
 				return d.numberOfSubs;

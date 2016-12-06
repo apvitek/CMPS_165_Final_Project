@@ -240,7 +240,7 @@ h5 {
     font: 300 15px "Helvetica Neue";
     position: absolute;
     bottom: -410px;
-    background-color: #ffffff;
+    background-color: rgb(239, 239, 239);
     width: 900px;
     height: 100px;
     padding: 10px;
@@ -249,7 +249,7 @@ h5 {
 
 .columns {
     font: 300 15px "Helvetica Neue";
-    background-color: #ffffff;
+    background-color: rgb(239, 239, 239);
     position: absolute;
     height: 160px;
     -webkit-columns: 300px 1; /* Chrome, Safari, Opera */
