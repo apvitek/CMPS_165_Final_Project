@@ -430,7 +430,7 @@
 			function mouseclick(d) {
 				var genreName = d.name.split(".")[1].split('_').join(' ').replace(/\b\w/g, l => l.toUpperCase());
 				var subGenreName = d.name.split(".")[2].split('_').join(' ');
-				tooltip.html("</br></br><font size=\"6\">" + subGenreName + "</font></br></br>Genre: <span style='color:gray'>" + genreName + "</span></br>" + "</br>Notable Artists: <span style='color:gray'>" + d.artist.join(', ') + "</span></br>" + "</br>Year: <span style='color:gray'>" + d.year + "</span></br></br>" + "<iframe src=\"https://embed.spotify.com/?uri=spotify:" + d.link + "&theme=white\" width=\"300\" height=\"300\" frameborder=\"0\" allowtransparency=\"false\"></iframe></span></br>");
+				tooltip.html("</br></br><font size=\"6\">" + subGenreName + "</font></br></br>Genre: <span style='color:gray'>" + genreName + "</span></br>" + "</br>Notable Artists: <span style='color:gray'>" + d.artist.join(', ') + "</span></br>" + "</br>Year: <span style='color:gray'>" + d.year + "</span></br></br>" + "<iframe src=\"https://embed.spotify.com/?uri=spotify:" + d.link + "&theme=white\" width=\"300\" height=\"300\" frameborder=\"0\" allowtransparency=\"false\"></iframe></span></br></font></br>Click to Dismiss<span style='color:gray'></span>");
 				tooltip.transition().duration(1000).style("opacity", .90);
 				document.getElementById("tooltip").style.pointerEvents = "auto";
 
