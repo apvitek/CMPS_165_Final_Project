@@ -11,4 +11,4 @@ All the data sources are sited on the bottom of the page
 
 ### Screenshot:
 
-![alt text](https://i.imgur.com/lAU9mp0l.jpg)
+![alt text](https://i.imgur.com/HOmse6x.jpg)
