@@ -10,7 +10,7 @@ Additionally, the visualization can be customized to match the user's preference
 All the data sources are sited on the bottom of the page
 
 ## Link:
-https://boboborghi.github.io/CMPS_165_Final_Project/
+https://apvitek.github.io/CMPS_165_Final_Project/
 
 ### Screenshot:
 
